@@ -1,0 +1,180 @@
+%section{role: "region", "aria-label" => "Forms"}
+  .ctn
+    %form.form.m-b_4{action: "#"}
+      %fieldset.m-b_6
+        %legend.form_legend.m-b_2 HTML5 types, attributes
+        .m-b_2
+          %input.form_text.grid-i.__grid-3{type: "text", placeholder: "Autofocus", autofocus: "true"}
+        .m-b_2
+          %input.form_text.grid-i.__grid-3{type: "text", placeholder: "Required", required: "required", title: "Title example."}
+        .m-b_2
+          %input.form_text.grid-i.__grid-3{type: "url", placeholder: "Url", title: "Title example."}
+        .m-b_2
+          %input.form_text.grid-i.__grid-3{type: "tel", placeholder: "Tel", title: "Title example."}
+        .m-b_2
+          %input.form_text.grid-i.__grid-3{type: "email", pattern: "[^ @]*@[^ @]*", value: "example@mail.com", title: "Title example."}
+      
+      %fieldset.m-b_6
+        %legend.form_legend.m-b_2 Buttons
+        .m-b_2
+          %button.form_button{disabled: "disabled"} Button
+        .m-b_2
+          %button.form_button.grid-i.__grid-6 Button
+        .m-b_2
+          %button.form_button.form_el.__block
+            %i.icon-ok-sign
+            &nbsp;Button with icon
+
+      %fieldset.m-b_6
+        %legend.form_legend.m-b_2 Inputs
+        .m-b_2
+          %label.form_label.form_el.__block Label
+          %input.form_text.grid-i.__grid-1{type: "text"}
+        .m-b_2
+          %label.form_label.form_el.__block{data: {required: "before"}} Required before label
+          %input.form_text.grid-i.__grid-2{type: "text", value: "Value"}
+        .m-b_2
+          %label.form_label.form_el.__block{data: {required: "after"}} Required after label
+          %input.form_text.grid-i.__grid-3{type: "text", placeholder: "Placeholder"}
+        .m-b_2
+          %input.form_text.grid-i.__grid-4{type: "text", value: "True", data: {valid: "true"}}
+        .m-b_2
+          %input.form_text.grid-i.__grid-5{type: "password", value: "False", data: {valid: "false"}}
+        .m-b_2
+          %input.form_text.grid-i.__grid-6{type: "text", value: "Disabled", disabled: "disabled"}
+      
+      %fieldset.m-b_6
+        %legend.form_legend.m-b_2 Checkboxes
+        .m-b_2
+          %label.form_label.form_el.__block Checkboxes
+          %span
+            .form_checkbox.form_el.__fake
+              %input.form_checkbox.form_el.__real{type: "checkbox"}
+          &nbsp;
+          %span
+            .form_checkbox.form_el.__fake
+              %input.form_checkbox.form_el.__real{type: "checkbox", checked: "checked"}
+          &nbsp;
+          %span
+            .form_checkbox.form_el.__fake
+              %input.form_checkbox.form_el.__real{type: "checkbox", data: {valid: "false"}}
+          &nbsp;
+          %span
+            .form_checkbox.form_el.__fake
+              %input.form_checkbox.form_el.__real{type: "checkbox", checked: "checked", data: {valid: "true"}}
+          &nbsp;
+          %span
+            .form_checkbox.form_el.__fake
+              %input.form_checkbox.form_el.__real{type: "checkbox", disabled: "disabled"}
+          &nbsp;
+          %span
+            .form_checkbox.form_el.__fake
+              %input.form_checkbox.form_el.__real{type: "checkbox", checked: "checked", disabled: "disabled"}
+        .m-b_2
+          %label.form_label{for: "checkbox"}
+            %span
+              %span.form_checkbox.form_el.__fake
+                %input#checkbox.form_checkbox.form_el.__real{type: "checkbox"}
+            &nbsp;Checkbox
+      
+      %fieldset.m-b_6
+        %legend.form_legend.m-b_2 Radiobuttons
+        .m-b_2
+          %label.form_label.form_el.__block Radiobuttons
+          %span
+            %span.form_radio.form_el.__fake
+              %input.form_radio.form_el.__real{type: "radio", name: "radio1", checked: "checked"}
+          &nbsp;
+          %span
+            %span.form_radio.form_el.__fake
+              %input.form_radio.form_el.__real{type: "radio", name: "radio1", data: {valid: "true"}}
+          &nbsp;
+          %span
+            %span.form_radio.form_el.__fake
+              %input.form_radio.form_el.__real{type: "radio", name: "radio1", data: {valid: "false"}}
+          &nbsp;
+          %span
+            %span.form_radio.form_el.__fake
+              %input.form_radio.form_el.__real{type: "radio", name: "radio1", disabled: "disabled"}
+        .m-b_2
+          %label.form_label{for: "radio"}
+            %span
+              %span.form_radio.form_el.__fake
+                %input#radio.form_radio.form_el.__real{type: "radio", name: "radio2"}
+            &nbsp;Radio
+     
+      %fieldset.m-b_6
+        %legend.form_legend.m-b_2 Files
+        .m-b_2
+          .form_file.form_el.__fake.grid-i.__grid-3{data: {placeholder: "Выберите файл..."}}
+            %p &nbsp;
+            %input.form_file.form_el.__real{type: "file"}
+        .m-b_2
+          .form_file.form_el.__fake.grid-i.__grid-6{data: {placeholder: "Выберите файл..."}}
+            %p &nbsp;
+            %input.form_file.form_el.__real{type: "file", data: {valid: "true"}}
+        .m-b_2
+          .form_file.form_el.__fake.grid-i.__grid-9{data: {placeholder: "Выберите файл..."}}
+            %p &nbsp;
+            %input.form_file.form_el.__real{type: "file", data: {valid: "false"}}
+        .m-b_2
+          .form_file.form_el.__fake.__block{data: {placeholder: "Выберите файл..."}}
+            %p &nbsp;
+            %input.form_file.form_el.__real{type: "file", disabled: "disabled"}
+      
+      %fieldset.m-b_6
+        %legend.form_legend.m-b_2 Buttons
+        .m-b_2
+          %input.form_button{type: "button", value: "Button", disabled: "disabled"}
+        .m-b_2
+          %input.form_button.grid-i.__grid-6{type: "reset", value: "Reset"}
+        .m-b_2
+          %input.form_button.form_el.__block{type: "submit", value: "Submit"}
+      
+      %fieldset.m-b_6
+        %legend.form_legend.m-b_2 Selects
+        .m-b_2
+          .form_select.form_el.__fake.grid-i.__grid-2
+            %p &nbsp;
+            %select.form_select.form_el.__real
+              %option{selected: "selected"} Выберите
+              %option Первый
+              %option Второй
+              %option Третий третий третий третий
+        .m-b_2
+          .form_select.form_el.__fake.grid-i.__grid-4
+            %p &nbsp;
+            %select.form_select.form_el.__real{data: {valid: "true"}}
+              %option Выберите
+              %option{selected: "selected"} Первый
+              %option Второй
+              %option Третий
+        .m-b_2
+          .form_select.form_el.__fake.grid-i.__grid-6
+            %p &nbsp;
+            %select.form_select.form_el.__real{data: {valid: "false"}}
+              %option Выберите
+              %option Первый
+              %option{selected: "selected"} Второй
+              %option Третий
+        .m-b_2
+          .form_select.form_el.__fake.grid-i.__grid-8
+            %p &nbsp;
+            %select.form_select.form_el.__real{disabled: "disabled"}
+              %option{selected: "selected"} Выберите
+              %option Первый
+              %option Второй
+              %option Третий
+
+      %fieldset
+        %legend.form_legend.m-b_2 Textareas
+        .m-b_2
+          %textarea.form_textarea.grid-i.__grid-3{rows: "3"}
+        .m-b_2
+          %textarea.form_textarea.grid-i.__grid-6{rows: "4", data: {valid: "true"}} True
+        .m-b_2
+          %textarea.form_textarea.grid-i.__grid-6{rows: "4", data: {valid: "false"}} False
+        .m-b_2
+          %textarea.form_textarea.form_el.__block{rows: "5", disabled: "disabled"} Disabled
+
+    = haml 'views/layouts/_scroll'.to_sym

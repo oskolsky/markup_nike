@@ -1,0 +1,77 @@
+%section{role: "region", "aria-label" => "Links"}
+  .ctn
+    .grid
+      .grid-i.__grid-6
+        %h6
+          %a.double-hover{href: "#1"} Link in header tag
+      
+      .grid-i.__grid-6
+        %h3
+          %a.a.__inner.double-hover{href: "#1"}
+            %i.icon-external-link
+            &nbsp;
+            %span Link with icon in header tag
+      
+      .grid-i.__grid-6
+        %p.m-b_1.tx.__xs
+          %a.double-hover{href: "#2"} Link
+        %p.m-b_1
+          %a.a.__inner.double-hover{href: "#3"}
+            %span Link
+            , yes
+        %p.tx.__xl
+          %a.a.__inner.double-hover{href: "#4"}
+            %span Link
+            &nbsp;that&nbsp;
+            %span link
+      
+      .grid-i.__grid-6
+        %p.m-b_1.tx.__xs
+          %a.a.__inner.double-hover{href: "#2"}
+            %i.icon-external-link
+            &nbsp;
+            %span Link with small icon
+        %p.m-b_1
+          %a.a.__inner.double-hover{href: "#3"}
+            %span Link
+            &nbsp;
+            %i.icon-external-link
+            &nbsp;
+            %span with medium icon
+        %p.tx.__xl
+          %a.a.__inner.double-hover{href: "#4"}
+            %span Link with large icon
+            &nbsp;
+            %i.icon-external-link
+
+      .grid-i.__grid-6
+        %p.tx.__xl.m-b_1
+          %a.a.__pseudo.double-hover{href: "#5"} Pseudolink
+        %p.m-b_1
+          %a.a.__pseudo.__inner.double-hover{href: "#6"}
+            %span Pseudolink
+            , yes
+        %p.tx.__xs
+          %a.a.__pseudo.__inner.double-hover{href: "#7"}
+            %span Pseudolink
+            &nbsp;that&nbsp;
+            %span pseudolink
+      
+      .grid-i.__grid-6
+        %p.m-b_1.tx.__xl
+          %a.a.__pseudo.__inner.double-hover{href: "#5"}
+            %i.icon-external-link
+            &nbsp;
+            %span Pseudolink with large icon
+        %p.m-b_1
+          %a.a.__pseudo.__inner.double-hover{href: "#6"}
+            %span Pseudolink
+            &nbsp;
+            %i.icon-external-link
+            &nbsp;
+            %span with medium icon
+        %p.tx.__xs
+          %a.a.__pseudo.__inner.double-hover{href: "#7"}
+            %span Pseudolink with small icon
+            &nbsp;
+            %i.icon-external-link

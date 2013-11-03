@@ -1,0 +1,188 @@
+%section{role: "region", "aria-label" => "Components"}
+  .ctn
+    %article.m-b_8.tx.__center
+      %header.m-b_2
+        %h4 Alerts
+      %article.alert.__inline.__wide.c-bg.c-border.__green.m-b_2
+        %i.alert_close.js-alert_close.icon-remove
+        %header
+          %h2 Success
+        %p Success description
+      %article.alert.__inline.c-bg.c-border.__orange.b-center.grid-i.__grid-6.m-b_2
+        %i.alert_close.js-alert_close.icon-remove
+        %header
+          %h3 Warning
+        %p Warning description
+      %article.alert.__inline.__narrow.c-bg.c-border.__red.b-center.grid-i.__grid-3
+        %i.alert_close.js-alert_close.icon-remove
+        %header
+          %h4 Error
+        %p Error description
+
+    %article.m-b_8.tx.__center
+      %header.m-b_2
+        %h4 Backgrounds
+      .grid.__no-gutter
+        .grid-i.__grid-3
+          .c-bg.p-t_2.p-b_2.__red
+            %p Red
+        .grid-i.__grid-3
+          .c-bg.p-t_2.p-b_2.__orange
+            %p Orange
+        .grid-i.__grid-3
+          .c-bg.p-t_2.p-b_2.__yellow
+            %p Yellow
+        .grid-i.__grid-3
+          .c-bg.p-t_2.p-b_2.__green
+            %p Green
+        .grid-i.__grid-3
+          .c-bg.p-t_2.p-b_2.__blue
+            %p Blue
+        .grid-i.__grid-3
+          .c-bg.p-t_2.p-b_2.__violet
+            %p Violet
+        .grid-i.__grid-3
+          .c-bg.p-t_2.p-b_2.__gray
+            %p Gray
+        .grid-i.__grid-3
+          .c-bg.p-t_2.p-b_2.__dark
+            %p.tx.__lighten-100 Dark
+
+    %article.m-b_8.tx.__center
+      %header.m-b_2
+        %h4 Badges
+      %p.br-word
+        %span.c-badge.__red Red
+        &nbsp;
+        %span.c-badge.__orange Orange
+        &nbsp;
+        %span.c-badge.__yellow Yellow
+        &nbsp;
+        %span.c-badge.__green Green
+        &nbsp;
+        %span.c-badge.__blue Blue
+        &nbsp;
+        %span.c-badge.__violet Violet
+        &nbsp;
+        %span.c-badge.__gray Gray
+        &nbsp;
+        %span.c-badge.__dark Dark
+        &nbsp;
+        %span.c-badge.__round.__red 1
+        &nbsp;
+        %span.c-badge.__round.__orange 2
+        &nbsp;
+        %span.c-badge.__round.__yellow 3
+        &nbsp;
+        %span.c-badge.__round.__green 4
+        &nbsp;
+        %span.c-badge.__round.__blue 5
+        &nbsp;
+        %span.c-badge.__round.__violet 6
+        &nbsp;
+        %span.c-badge.__round.__gray 7
+        &nbsp;
+        %span.c-badge.__round.__dark 8
+    
+    %article.m-b_8.tx.__center
+      %header.m-b_2
+        %h4 Breadcrumbs
+      %nav
+        %ul.c-breadcrumbs
+          %li.c-breadcrumbs_i
+            %a.c-breadcrumbs_a{href: "/index"} Chemistry Template
+          %li.c-breadcrumbs_i
+            %a.c-breadcrumbs_a{href: "/components"} Components
+          %li.c-breadcrumbs_i Breadcrumbs
+
+    %article.m-b_8.tx.__center
+      %header.m-b_2
+        %h4 Buttons
+      .form.c-form
+        .m-b_2
+          %input.form_button.c-form_button.__red{type: "button", value: "Red"}
+          &nbsp;
+          %input.form_button.c-form_button.__orange{type: "button", value: "Orange"}
+          &nbsp;
+          %input.form_button.c-form_button.__yellow{type: "button", value: "Yellow"}
+          &nbsp;
+          %input.form_button.c-form_button.__green{type: "button", value: "Green"}
+          &nbsp;
+          %input.form_button.c-form_button.__blue{type: "button", value: "Blue"}
+          &nbsp;
+          %input.form_button.c-form_button.__violet{type: "button", value: "Violet"}
+          &nbsp;
+          %input.form_button.c-form_button.__gray{type: "button", value: "Gray"}
+          &nbsp;
+          %input.form_button.c-form_button.__dark{type: "button", value: "Dark"}
+        .m-b_2
+          %input.form_button.c-form_button.__gray.__small{type: "button", value: "Small"}
+          &nbsp;
+          %input.form_button.c-form_button.__gray{type: "button", value: "Normal"}
+          &nbsp;
+          %input.form_button.c-form_button.__gray.__large{type: "button", value: "Large"}
+    
+    %article.m-b_8.tx.__center
+      %header.m-b_2
+        %h4 Colors
+      %p.br-word
+        %span.c-color.__red Red
+        &nbsp;
+        %span.c-color.__orange Orange
+        &nbsp;
+        %span.c-color.__yellow Yellow
+        &nbsp;
+        %span.c-color.__green Green
+        &nbsp;
+        %span.c-color.__blue Blue
+        &nbsp;
+        %span.c-color.__violet Violet
+        &nbsp;
+        %span.c-color.__gray Gray
+        &nbsp;
+        %span.c-color.__dark Dark
+    
+    %article.m-b_8
+      %header.m-b_2
+        %h4.tx.__center Navigation
+      %nav
+        %ul.c-navigation
+          %li.c-navigation_i
+            %span.c-navigation_a.__current &bull;
+          %li.c-navigation_i
+            %a.c-navigation_a{href: "#"} &bull;
+          %li.c-navigation_i
+            %a.c-navigation_a{href: "#"} &bull;
+          %li.c-navigation_i
+            %a.c-navigation_a{href: "#"} &bull;
+          %li.c-navigation_i
+            %a.c-navigation_a{href: "#"} &bull;
+        
+
+    %article.m-b_8
+      %header.m-b_2
+        %h4.tx.__center Pagination
+      %nav
+        %ul.c-pagination
+          %li.c-pagination_i
+            %span.c-pagination_a.__prev.__disabled
+              %i.icon-angle-left
+          %li.c-pagination_i
+            %span.c-pagination_a.__current 1
+          %li.c-pagination_i
+            %a.c-pagination_a{href: "#"} 2
+          %li.c-pagination_i
+            %a.c-pagination_a{href: "#"} 3
+          %li.c-pagination_i
+            %a.c-pagination_a{href: "#"} 4
+          %li.c-pagination_i
+            %a.c-pagination_a{href: "#"} 5
+          %li.c-pagination_i
+            %span.c-pagination_a.__spacer ...
+          %li.c-pagination_i
+            %a.c-pagination_a{href: "#"} 100
+          %li.c-pagination_i
+            %a.c-pagination_a.__next{href: "#"}
+              %i.icon-angle-right
+
+    = haml 'views/layouts/_scroll'.to_sym

@@ -1,0 +1,123 @@
+%section{role: "region", "aria-label" => "Content styles"}
+  .ctn
+    %article.cnt.m-b_4
+      %h1 H1, Paragraphs, inline tags
+      %p.br-word
+        Lorem&nbsp;
+        %a{href: "#"} ipsum
+        &nbsp;dolor&nbsp;
+        %abbr{title: "abbr"} sit
+        &nbsp;amet,&nbsp;
+        %b consectetuer
+        &nbsp;adipiscing&nbsp;
+        %del elit,
+        &nbsp;sed&nbsp;
+        %dfn{title: "dfn"} diam
+        &nbsp;nonummy&nbsp;
+        %em nibh
+        &nbsp;euismod&nbsp;
+        %i tincidunt
+        &nbsp;ut&nbsp;
+        %ins laoreet
+        &nbsp;dolore&nbsp;
+        %mark magna
+        &nbsp;aliquam&nbsp;
+        %q erat
+        &nbsp;volutpat.&nbsp;
+        %s Ut
+        &nbsp;wisi&nbsp;
+        %small enim
+        &nbsp;ad&nbsp;
+        %strong minim
+        &nbsp;veniam,&nbsp;
+        %sub quis
+        &nbsp;nostrud&nbsp;
+        %sup exerci
+        &nbsp;tation
+        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+      %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+      
+      %h2 H2, Lists
+      %dl
+        %dt Definition term
+        %dd
+          Definition description
+          %dl
+            %dt Definition term
+            %dd
+              Definition description
+              %dl
+                %dt Definition term
+                %dd Definition description
+      %ol
+        %li Ordered list item
+        %li
+          Ordered list item
+          %ol
+            %li Ordered list item
+            %li
+              Ordered list item
+              %ol
+                %li Ordered list item
+                %li Ordered list item
+      %ul
+        %li Unordered list item
+        %li
+          Unordered list item
+          %ul
+            %li Unordered list item
+            %li
+              Unordered list item
+              %ul
+                %li Unordered list item
+                %li Unordered list item
+
+      %h3 H3, Blockquote
+      %blockquote Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat
+
+      %h4 H4, Code
+      %pre
+        %code$("#dialog").dialog({
+        %code  autoOpen: false,
+        %code  show: {
+        %code    effect: "blind",
+        %code    duration: 1000
+        %code  },
+        %code  hide: {
+        %code    effect: "explode",
+        %code    duration: 1000
+        %code  }
+        %code});
+      
+      %h5 H5, Images
+      %img.c-bg.__green{src: "/assets/images/blank_landscape.gif", alt: ""}
+      %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+      %figure
+        %img.c-bg.__blue{src: "/assets/images/blank_landscape.gif", width: "50%", alt: ""}
+        %figcaption Image caption
+      %p
+        %img.c-bg.__violet{src: "/assets/images/blank_landscape.gif", width: "240", height: "135", alt: ""}
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+
+      %h6 H6, Table
+      %table
+        %caption Table caption
+        %thead
+          %tr
+            %th Table head
+            %th Table head
+            %th Table head
+        %tbody
+          %tr>
+            %td Table content
+            %td Table content
+            %td Table content
+          %tr
+            %td Table body
+            %td Table body
+            %td Table body
+        %tfoot
+          %tr
+            %td{colspan: "3"} Table foot
+    
+    = haml 'views/layouts/_scroll'.to_sym

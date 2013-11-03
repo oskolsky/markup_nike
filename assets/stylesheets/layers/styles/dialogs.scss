@@ -1,0 +1,35 @@
+.dialog {
+  padding: 4rem;
+  background: #fff;
+
+  //
+  // .. Color
+  //
+  &.__black {
+    background: #000;
+    color: #fff; 
+  }
+
+  //
+  // .. Size
+  //
+  &.__narrow {
+    padding: 2rem;
+    .dialog_close {
+      top: .5rem;
+      right: .5rem;
+    }
+  }
+  &.__wide   {
+    padding: 8rem;
+    .dialog_close {
+      top: 1.5rem;
+      right: 1.5rem;
+    }
+  }
+}
+  .dialog_close {
+    cursor: pointer;
+    top: 1rem;
+    right: 1rem;
+  }

@@ -1,0 +1,26 @@
+.dialog#arctic-modal-dialog-form{style: "width: 300px;"}
+  %i.dialog_close.js-dialog_close.icon-remove
+  
+  :javascript
+    $('.form').customForm();
+
+  %form.form{action: "#"}
+    %fieldset
+      %legend.form_legend.m-b_2 Авторизация
+    .m-b_2
+      %label.form_label.form_el.__block Логин
+      %input.form_text.form_el.__block{type: "text", placeholder: "Эл. почта", autofocus: "true", required: "required"}
+    .m-b_2
+      %label.form_label.form_el.__block Пароль
+      %input.form_text.form_el.__block{type: "password"}
+    .m-b_2
+      %label.form_label{for: "checkbox"}
+        %span
+          %span.form_checkbox.form_el.__fake
+            %input#checkbox.form_checkbox.form_el.__real{type: "checkbox", checked: "checked"}
+        &nbsp;
+        Запомнить
+    %button.form_button.c-form_button.__green
+      %i.icon-unlock
+      &nbsp;Войти
+
