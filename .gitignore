@@ -1,0 +1,20 @@
+# Eclipse
+.project
+
+# Mac
+.DS_Store
+
+# RubyMine
+.idea
+
+# Sword
+sword.exe
+
+# Sublime Text
+*.sublime-*
+
+# System
+*.log
+
+# Windows
+Thumbs.db

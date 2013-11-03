@@ -16,7 +16,7 @@
 //
 // .. Layout type
 //
-$layout: responsive; // .. fixed / fluid / responsive
+$layout: fluid; // .. fixed / fluid / responsive
 $responsive: auto; // .. auto / manual (activated if $layout: responsive;)
 $responsive-column-qty: 12; // .. 8 / 12 (activated if $responsive: auto;)
 
