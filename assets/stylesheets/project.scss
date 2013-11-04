@@ -1,0 +1,112 @@
+//****************************************************************************************************
+//
+// .. FONTS
+//
+//****************************************************************************************************
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic);
+
+@font-face {
+  font-family: 'futurafuturiscondextraboldcRg';
+  src: url('/assets/fonts/futurafuturiscondextra/futurafuturiscondextraboldc-webfont.eot');
+  src: url('/assets/fonts/futurafuturiscondextra/futurafuturiscondextraboldc-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/futurafuturiscondextra/futurafuturiscondextraboldc-webfont.woff') format('woff'),
+  url('/assets/fonts/futurafuturiscondextra/futurafuturiscondextraboldc-webfont.ttf') format('truetype'),
+  url('/assets/fonts/futurafuturiscondextra/futurafuturiscondextraboldc-webfont.svg#futurafuturiscondextraboldcRg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TradeGothicW01-BoldCn20';
+  src: url('/assets/fonts/TradeGothicW01/TradeGothicW01-BoldCn20.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+//****************************************************************************************************
+//
+// .. STYLES
+//
+//****************************************************************************************************
+html {
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  background: #fff;
+  color: #000;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;;
+  font-size:   1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-backface-visibility: hidden;
+}
+
+h1 {
+  font-family: "TradeGothicW01-BoldCn20", "Arial Black", "Arial Bold", Arial, sans-serif;
+  font-size: 7rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+
+
+//****************************************************************************************************
+//
+// .. HEADER
+//
+//****************************************************************************************************
+.header {
+
+}
+
+
+
+//****************************************************************************************************
+//
+// .. SECTION
+//
+//****************************************************************************************************
+.section {
+  padding: 12rem 0 0 0;
+  &.__store {
+    background-color: #ff5c21;
+    .section_title {
+      color: #fff;
+      span {color: #fdaa8c;}
+    }
+  }
+  &.__card {
+    background-color: #ece3d4;
+    .section_title {
+      color: #3f3438;
+      span {color: #f786a7;}
+    }
+  }
+  &.__stores {
+    background-color: #10a6a8;
+    .section_title {
+      color: #1a6264;
+      span {color: #fff;}
+    }
+  }
+}
+.section_title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+
+//****************************************************************************************************
+//
+// .. FOOTER
+//
+//****************************************************************************************************
+.footer {
+
+}
