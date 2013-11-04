@@ -135,6 +135,21 @@ h2 {font-size: 5rem;}
       position: absolute;
     }
   }
+  &.__rules {
+    background-color: #254f7d;
+    color: #d3dce5;
+    display: none;
+    padding-bottom: 7rem;
+    .section_header {
+      margin-bottom: 4rem;
+    }
+      .section_title {
+        color: #fff;
+      }
+    .section_body {
+      margin-bottom: 4rem;
+    }
+  }
   &.__stores {
     background-color: #10a6a8;
     padding-bottom: 9.5rem;
@@ -242,6 +257,18 @@ h2 {font-size: 5rem;}
 }
 
 //
+// .. File
+//
+.file {
+  color: #f786a7;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.file_ico {
+  margin-top: 2rem;
+}
+
+//
 // .. Button
 //
 .button {
@@ -258,8 +285,9 @@ h2 {font-size: 5rem;}
     color: #3f3438;
   }
   &.__color {
-    background-color: #ff5c21;
     color: #fff;
+    &.__red  {background-color: #ff5c21;}
+    &.__ping {background-color: #f786a7;}
   }
 }
 
