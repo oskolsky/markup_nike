@@ -20,4 +20,10 @@ $(function() {
     return false;
   });
 
+  $('#menu').find('a').click(function() {
+    var el = $(this).attr('href');
+    $('html, body').animate({scrollTop: $(el).offset().top}, 500);
+    return false
+  });
+
 });

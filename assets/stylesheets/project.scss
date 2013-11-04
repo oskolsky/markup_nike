@@ -96,7 +96,125 @@ h2 {font-size: 5rem;}
 //
 //****************************************************************************************************
 .header {
+  text-align: center;
+  padding: 1.1rem 0 .9rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  &::after {
+    background-color: #000;
+    content: '';
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+//
+// .. Logo
+//
+.logo {
+  color: #fff;
+  font-family: "TradeGothicW01-BoldCn20", "Arial Black", "Arial Bold", Arial, sans-serif;
+  font-size: 3.4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+//
+// .. Navigation
+//
+.navigation {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 5.2rem;
+  position: absolute;
+  top: 0;
+  left: 3rem;
+  bottom: 0;
+  text-transform: uppercase;
+  &:hover {
+    .menu {
+      display: block;
+    }
+  }
+  img {margin-right: 1rem}
+  img, span {
+    cursor: pointer;
+    vertical-align: middle;
+  }
+}
+//
+// .. Go to profile
+//
+.go-to-profile {
+  border: .1rem solid #808080;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  height: 4rem;
+  line-height: 4rem;
+  padding: 0 1.5rem;
+  position: absolute;
+  top: 50%;
+  right: 3rem;
+  -webkit-transform: translate(0, -50%);
+     -moz-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+       -o-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 
+
+
+//****************************************************************************************************
+//
+// .. MENU
+//
+//****************************************************************************************************
+.menu {
+  border-top: .1rem solid #bfbfbf;
+  display: none;
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  width: 22rem;
+  &::after {
+    background-color: #000;
+    content: '';
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+.menu_i {
+  padding-left: 4rem;
+  &:not(:last-child) {
+    border-bottom: .1rem solid #999999;
+  }
+}
+.menu_i_a {
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
 }
 
 
