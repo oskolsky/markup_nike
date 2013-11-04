@@ -33,24 +33,56 @@
 html {
   font-size: 62.5%;
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
 }
 
 body {
   background: #fff;
   color: #000;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;;
-  font-size:   1.5rem;
-  font-weight: 400;
-  line-height: 1.5;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size:   1.7rem;
+  font-weight: 300;
+  line-height: 1.2;
+  min-width: 1200px;
   -webkit-backface-visibility: hidden;
 }
 
-h1 {
+h1, h2 {
   font-family: "TradeGothicW01-BoldCn20", "Arial Black", "Arial Bold", Arial, sans-serif;
-  font-size: 7rem;
   font-weight: 400;
   line-height: 1;
+}
+h1 {font-size: 7rem;}
+h2 {font-size: 5rem;}
+
+.ctn {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.cols {
+  display: inline-block;
+  margin: 0 40px;
+  vertical-align: top;
+  &.__full {
+    width: 720px;
+  }
+  &.__half {
+    width: 320px;
+  }
+}
+
+.cnt {
+  > p {
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+    > img {
+      display: inline-block;
+      margin-bottom: 1rem;
+      vertical-align: top;
+    }
+  }
 }
 
 
@@ -72,32 +104,163 @@ h1 {
 //
 //****************************************************************************************************
 .section {
-  padding: 12rem 0 0 0;
+  padding-top: 11rem;
   &.__store {
     background-color: #ff5c21;
-    .section_title {
-      color: #fff;
-      span {color: #fdaa8c;}
+    color: #fff;
+    padding-bottom: 11rem;
+    .section_header {
+      margin-bottom: 4.5rem;
     }
+      .section_title {
+        color: #fff;
+        span {color: #fdaa8c;}
+      }
   }
   &.__card {
     background-color: #ece3d4;
-    .section_title {
-      color: #3f3438;
-      span {color: #f786a7;}
+    color: #46443f;
+    position: relative;
+    .section_header {
+      margin-bottom: 3rem;
+    }
+      .section_title {
+        color: #3f3438;
+        span {color: #f786a7;}
+      }
+    .button {
+      bottom: 5.5rem;
+      left: 50%;
+      margin-left: -16rem;
+      position: absolute;
     }
   }
   &.__stores {
     background-color: #10a6a8;
-    .section_title {
-      color: #1a6264;
-      span {color: #fff;}
+    padding-bottom: 9.5rem;
+    .section_header {
+      margin-bottom: 4.5rem;
+    }
+      .section_title {
+        color: #1a6264;
+        margin-bottom: 3rem;
+        span {color: #fff;}
+      }
+  }
+  &.__contacts {
+    background-color: #254f7d;
+    color: #fff;
+    padding-bottom: 7rem;
+    h2 {
+      text-transform: uppercase;
+    }
+    .section_body {
+      margin-bottom: 5rem;
     }
   }
 }
-.section_title {
+//
+// .. Header
+//
+.section_header {
   text-align: center;
+}
+  .section_title {
+    text-transform: uppercase;
+  }
+//
+// .. Body
+//
+.section_body {
+
+}
+//
+// .. Footer
+//
+.section_footer {
+  text-align: center;
+}
+
+
+
+//****************************************************************************************************
+//
+// .. STORES
+//
+//****************************************************************************************************
+.stores {
+
+}
+.stores_i {
+  &:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+  &.__moscow {margin-bottom: 10rem;}
+}
+.stores_i_location {
+  color: #fff;
   text-transform: uppercase;
+}
+.stores_i_caption {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.stores_i_caption_mark {
+  &:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+}
+  .stores_i_name {
+    color: #1a6264;
+  }
+  .stores_i_address {
+    color: #fff;
+  }
+  .stores_i_phone {
+    color: #fff;
+  }
+  .stores_i_email {
+    a {
+      color: #fff;
+    }
+  }
+
+
+
+//****************************************************************************************************
+//
+// .. ELEMENTS
+//
+//****************************************************************************************************
+//
+// .. Brand photo
+//
+.brand-photo {
+  vertical-align: top;
+}
+
+//
+// .. Button
+//
+.button {
+  border: none;
+  display: inline-block;
+  font-size: 1.5rem;
+  height: 6rem;
+  line-height: 6rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 32rem;
+  &.__transparent {
+    border: .1rem solid #3f3438;
+    color: #3f3438;
+  }
+  &.__color {
+    background-color: #ff5c21;
+    color: #fff;
+  }
 }
 
 
@@ -108,5 +271,13 @@ h1 {
 //
 //****************************************************************************************************
 .footer {
-
+  color: #7f7f7f;
+  font-size: 1.5rem;
+  padding: 4rem 0;
+  .cols {
+    vertical-align: middle;
+  }
+  img {
+    vertical-align: top;
+  }
 }
