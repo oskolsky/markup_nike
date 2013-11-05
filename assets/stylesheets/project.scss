@@ -96,6 +96,7 @@ h2 {font-size: 5rem;}
 //
 //****************************************************************************************************
 .header {
+  box-shadow: 0 0 0 .1rem rgba(255, 255, 255, .5);
   text-align: center;
   padding: 1.1rem 0 .9rem;
   position: fixed;
@@ -226,6 +227,9 @@ h2 {font-size: 5rem;}
 //****************************************************************************************************
 .section {
   padding-top: 11rem;
+  //
+  // .. Nike store
+  //
   &.__store {
     background-color: #ff5c21;
     color: #fff5f1;
@@ -238,6 +242,9 @@ h2 {font-size: 5rem;}
         span {color: #fdaa8c;}
       }
   }
+  //
+  // .. Card
+  //
   &.__card {
     background-color: #ece3d4;
     color: #46443f;
@@ -250,12 +257,17 @@ h2 {font-size: 5rem;}
         span {color: #f786a7;}
       }
     .button {
+      border: .1rem solid #3f3438;
       bottom: 5.5rem;
+      color: #3f3438;
       left: 50%;
       margin-left: -16rem;
       position: absolute;
     }
   }
+  //
+  // .. Rules
+  //
   &.__rules {
     background-color: #254f7d;
     color: #d3dce5;
@@ -270,7 +282,11 @@ h2 {font-size: 5rem;}
     .section_body {
       margin-bottom: 4rem;
     }
+    .button {background-color: #f786a7;}
   }
+  //
+  // .. Stores
+  //
   &.__stores {
     background-color: #10a6a8;
     padding-bottom: 9.5rem;
@@ -283,6 +299,9 @@ h2 {font-size: 5rem;}
         span {color: #fff;}
       }
   }
+  //
+  // .. Contacts & feedback
+  //
   &.__contacts {
     background-color: #254f7d;
     color: #d3dce5;
@@ -293,6 +312,106 @@ h2 {font-size: 5rem;}
     }
     .section_body {
       margin-bottom: 5rem;
+    }
+      .form_input, .form_textarea, .form_file {
+        background-color: #3b618a;
+        border: .1rem solid #9db0c5;
+      }
+      .form_label {color: #92a7be;}
+    .button {background-color: #ff5c21;}
+  }
+  //
+  // .. Banner
+  //
+  &.__banner {
+    background: #a9a9b0 url(/assets/images/banner_profile.png) center bottom no-repeat;
+    padding-bottom: 6rem;
+  }
+  //
+  // .. My profile
+  //
+  &.__profile {
+    background-color: #183a5f;
+    padding-bottom: 6rem;
+    .section_header {
+      color: #d1d8df;
+      margin-bottom: 4.5rem;
+    }
+      .section_title {
+        color: #d4e3e8;
+        margin-bottom: 1rem;
+        span {color: #ff6a4f;}
+      }
+    .section_body {
+      margin-bottom: 5rem;
+    }
+      .form_input, .form_textarea, .form_file {
+        background-color: #304e6f;
+        border: .1rem solid #98a7b7;
+      }
+      .form_label {color: #8c9daf;}
+    .button {background-color: #ff6a4f;}
+  }
+  //
+  // .. My secrets
+  //
+  &.__secrets {
+    background-color: #1e74a1;
+    padding-bottom: 6rem;
+    .section_header {
+      color: #d2e3ec;
+      margin-bottom: 4.5rem;
+    }
+      .section_title {
+        color: #fff;
+        margin-bottom: 1rem;
+        span {
+          color: #183a5f;
+        }
+      }
+    .section_body {
+      margin-bottom: 5rem;
+    }
+      .form_input, .form_textarea, .form_file {
+        background-color: #3582ab;
+        border: .1rem solid #9ac1d5;
+      }
+      .form_label {color: #bcd6e3;}
+    .button {background-color: #ff6a4f;}
+  }
+  //
+  // .. My records
+  //
+  &.__records {
+    background-color: #235977;
+    .section_header {
+      color: #c6cfd6;
+    }
+      .section_title {
+        color: #fff;
+        margin-bottom: 1rem;
+        span {
+          color: #ff6a4f;
+        }
+      }
+    .section_body {
+      table {
+        thead {
+          background-color: #336581;
+          th {
+            color: #99b2c0;
+            font-size: 1.5rem;
+            font-weight: 400;
+            text-align: left;
+            text-transform: uppercase;
+          }
+        }
+        tbody {
+          td {
+
+          }
+        }
+      }
     }
   }
 }
@@ -380,6 +499,26 @@ h2 {font-size: 5rem;}
 
 //****************************************************************************************************
 //
+// .. BANNERS
+//
+//****************************************************************************************************
+.banner {
+  color: #404040;
+  text-align: center;
+}
+.banner_title {
+  color: #ff6a4f;
+  font-family: "futurafuturiscondextraboldcRg", "Arial Black", "Arial Bold", Arial, sans-serif;
+  font-size: 8rem;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+
+
+//****************************************************************************************************
+//
 // .. ELEMENTS
 //
 //****************************************************************************************************
@@ -413,7 +552,7 @@ h2 {font-size: 5rem;}
 
 }
 .form_row {
-  margin-bottom: 3rem;
+  &:not(:last-child) {margin-bottom: 3rem;}
 }
 //
 // .. Button
@@ -427,21 +566,14 @@ h2 {font-size: 5rem;}
   text-decoration: none;
   text-transform: uppercase;
   width: 32rem;
-  &.__transparent {
-    border: .1rem solid #3f3438;
-    color: #3f3438;
-  }
   &.__color {
     color: #fff;
-    &.__red  {background-color: #ff5c21;}
-    &.__ping {background-color: #f786a7;}
   }
 }
 //
 // .. Label
 //
 .form_label {
-  color: #92a7be;
   display: block;
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -451,8 +583,6 @@ h2 {font-size: 5rem;}
 // .. Input
 //
 .form_input {
-  background-color: #3b618a;
-  border: .1rem solid #9db0c5;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
       -ms-box-sizing: border-box;
@@ -467,8 +597,6 @@ h2 {font-size: 5rem;}
 // .. Textarea
 //
 .form_textarea {
-  background-color: #3b618a;
-  border: .1rem solid #9db0c5;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
       -ms-box-sizing: border-box;
@@ -482,8 +610,6 @@ h2 {font-size: 5rem;}
 // .. File
 //
 .form_file.__fake {
-  background-color: #3b618a;
-  border: .1rem solid #9db0c5;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
       -ms-box-sizing: border-box;
