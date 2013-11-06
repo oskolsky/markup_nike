@@ -15,8 +15,8 @@ $(function() {
   });
 
   $('#open-feedback').click(function() {
-    $('#feedback').is(':hidden') ? $('#feedback').slideDown() : $('#feedback').slideUp();
-    $('html, body').animate({scrollTop: $('#contacts').offset().top}, 500);
+    $('#feedback-form').is(':hidden') ? $('#feedback-form').slideDown() : $('#feedback-form').slideUp();
+    $('html, body').animate({scrollTop: $('#feedback').offset().top}, 500);
     return false;
   });
 

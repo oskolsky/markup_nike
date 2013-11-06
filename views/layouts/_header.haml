@@ -1,8 +1,9 @@
 %header#header.header{role: "banner"}
   .ctn
     %nav.navigation{role: "navigation"}
-      %img{src: "/assets/images/menu.png", alt: "Меню", width: "31", height: "24"}
-      %span Меню
+      %a{href: "/"}
+        %img{src: "/assets/images/menu.png", alt: "Меню", width: "31", height: "24"}
+        %span Меню
       %ul#menu.menu
         %li.menu_i
           %a{href: "#store", class: "menu_i_a"} Nike store
@@ -11,6 +12,6 @@
         %li.menu_i
           %a{href: "#stores", class: "menu_i_a"} Наши магазины
         %li.menu_i
-          %a{href: "#contacts", class: "menu_i_a"} Обратная связь
+          %a{href: "#feedback", class: "menu_i_a"} Обратная связь
     %a{href: "/", class: "logo"} Сеть фирменных магазинов NIKE
     %a{href: "/profile.html", class: "go-to-profile"} Личный кабинет

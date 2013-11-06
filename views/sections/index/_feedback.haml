@@ -1,0 +1,60 @@
+%section#feedback.section.__feedback{role: "region", "aria-label" => "feedback"}
+  .ctn
+
+    %header.section_header
+
+    %section.section_body
+      .cols
+        .cols_i.__half
+          %h2.section_title Напишите нам
+        .cols_i.__half
+          %article.cnt
+            %p Если хотите поблагодарить наших сотрудников или, наоборот, сообщить о&nbsp;недопустимом обращении с&nbsp;вами, напишите нам. Мы&nbsp;гарантируем конфиденциальность ваших персональных данных.
+      %form.form#feedback-form
+        .form_row
+          .cols
+            .cols_i.__half
+              %label.form_label Имя
+              %input{type: "text", class: "form_input"}
+            .cols_i.__half
+              %article.cnt
+                %p Пожалуйста, укажите один из&nbsp;способов&nbsp;контакта с&nbsp;вами, иначе мы&nbsp;не&nbsp;сможем связаться с&nbsp;вами и&nbsp;ответить.
+        .form_row
+          .cols
+            .cols_i.__half
+              %label.form_label E-mail
+              %input{type: "text", class: "form_input"}
+            .cols_i.__half
+              %label.form_label Мобильный телефон
+              %input{type: "text", class: "form_input"}
+        .form_row
+          .cols
+            .cols_i.__half
+              %label.form_label Тема
+              %input{type: "text", class: "form_input"}
+            .cols_i.__half
+              %label.form_label Категория
+              %input{type: "text", class: "form_input"}
+        .form_row
+          .cols
+            .cols_i.__full
+              %label.form_label Сообщение
+              %textarea{rows: 10, class: "form_textarea"}
+        .form_row
+          .cols
+            .cols_i.__half
+              %article.cnt
+                %p
+                  Прикрепите&nbsp;файлы&nbsp;к&nbsp;сообщению&nbsp;формы.
+                  %br
+                  Максимальный размер файла&nbsp;&mdash; 1&nbsp;мб.
+                  %br
+                  Максимальное количество&nbsp;&mdash; 5&nbsp;штук.
+            .cols_i.__half
+              .form_file.form_el.__fake{data: {placeholder: "Добавить файл"}}
+                %p &nbsp;
+                %input.form_file.form_el.__real{type: "file"}
+
+    %footer.section_footer
+      .form
+        %a{href: "#", class: "form_button", id: "open-feedback"} Написать
