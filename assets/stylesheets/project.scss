@@ -26,11 +26,11 @@
 
 @font-face {
   font-family: 'futurafuturiscondextraboldcRg';
-  src: url('/assets/fonts/futurafuturiscondextra/futurafuturiscondextraboldc-webfont.eot');
-  src: url('/assets/fonts/futurafuturiscondextra/futurafuturiscondextraboldc-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/assets/fonts/futurafuturiscondextra/futurafuturiscondextraboldc-webfont.woff') format('woff'),
-       url('/assets/fonts/futurafuturiscondextra/futurafuturiscondextraboldc-webfont.ttf') format('truetype'),
-       url('/assets/fonts/futurafuturiscondextra/futurafuturiscondextraboldc-webfont.svg#futurafuturiscondextraboldcRg') format('svg');
+  src: url('/assets/fonts/Futura/futura-webfont.eot');
+  src: url('/assets/fonts/Futura/futura-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/Futura/futura-webfont.woff') format('woff'),
+       url('/assets/fonts/Futura/futura-webfont.ttf') format('truetype'),
+       url('/assets/fonts/Futura/futura-webfont.svg#futurafuturiscondextraboldcRg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -241,6 +241,34 @@ h2 {font-size: 5rem;}
   padding-top: 11rem;
   padding-bottom: 7rem;
   //
+  // .. Slider
+  //
+  &.__slider {
+    height: 560px;
+    padding: 0;
+    @include prefixes(box-sizing, border-box);
+  }
+  //
+  // .. Slider more info
+  //
+  &.__slider_more {
+    display: none;
+    padding: 3.5rem 0 8rem;
+    text-align: center;
+    &.__2 {
+      background-color: #000;
+      color: #fff;
+    }
+    &.__3 {
+      background-color: #000;
+      color: #fff;
+    }
+    &.__4 {
+      background-color: #e2e2e2;
+      color: #000;
+    }
+  }
+  //
   // .. Nike store
   //
   &.__store {
@@ -347,6 +375,18 @@ h2 {font-size: 5rem;}
       .form_label {
         color: #fff;
         opacity: .5;
+      }
+      .form_select {
+        background-color: #3b618a;
+        border: .1rem solid #9db0c5;
+        &::after {background-color: #b8c6d5;}
+        ul {
+          background-color: #3b618a;
+          border-right:  .1rem solid #9db0c5;
+          border-bottom: .1rem solid #9db0c5;
+          border-left:   .1rem solid #9db0c5;
+          li {&:hover {opacity: .5;}}
+        }
       }
     }
     .section_footer {
@@ -455,6 +495,116 @@ h2 {font-size: 5rem;}
 //  }
 //}
 
+
+
+//****************************************************************************************************
+//
+// .. SLIDER
+//
+//****************************************************************************************************
+.slider {
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+.slider_i {
+  background: green;
+  @include size(100%, 100%);
+  @include prefixes(box-sizing, border-box);
+  &.__01 {
+    background: #000 url(/assets/images/slider/slide_01.jpg) center no-repeat;
+    padding-top: 28rem;
+    .slider_i_title {color: #fff;}
+    .slider_i_tx    {color: #fff; opacity: .7;}
+  }
+  &.__02 {
+    background: #000 url(/assets/images/slider/slide_02.jpg) center no-repeat;
+    padding-top: 12rem;
+    .slider_i_title {color: #fff;}
+    .slider_i_tx    {color: #fff; text-transform: uppercase;}
+  }
+  &.__03 {
+    background: #000 url(/assets/images/slider/slide_03.jpg) center no-repeat;
+    padding-top: 28rem;
+    .slider_i_title {color: #fff;}
+    .slider_i_tx    {color: #bcfd55; text-transform: uppercase;}
+  }
+  &.__04 {
+    background: #e2e2e2 url(/assets/images/slider/slide_04.jpg) center no-repeat;
+    padding-top: 20rem;
+    .slider_i_title {color: #fff;}
+    .slider_i_tx    {color: #fff; text-transform: uppercase;}
+  }
+  &.__05 {
+    background: #e2e2e2 url(/assets/images/slider/slide_05.jpg) center no-repeat;
+    padding-top: 20rem;
+    .slider_i_title {color: #e03e8f;}
+    .slider_i_tx    {color: #000; opacity: .7;}
+  }
+  &.__06 {
+    background: #d6e5ea url(/assets/images/slider/slide_06.jpg) center no-repeat;
+    padding-top: 12rem;
+    .slider_i_title {color: #ff6a4f;}
+    .slider_i_tx    {color: #000; opacity: .7;}
+  }
+}
+.slider_i_title {
+  font-family: "futurafuturiscondextraboldcRg", "Arial Black", "Arial Bold", Arial, sans-serif;
+  font-size: 8rem;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: .5rem;
+  text-transform: uppercase;
+}
+.slider_i_tx {}
+//
+// .. Sloder pager
+//
+.slider_pager {
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+  z-index: 9998;
+  @include prefixes(transform, translate(-50%, 0));
+}
+.slider_pager_i {
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 .5rem;
+  @include size(1rem, 1rem);
+  &.cycle-pager-active {
+    opacity: .5;
+    position: relative;
+    &::before {
+      background-color: #3a1a08;
+      border-radius: 50%;
+      content: '';
+      position: absolute;
+      top: .1rem;
+      left: .1rem;
+      @include size(.8rem, .8rem);
+    }
+  }
+}
+//
+// .. More button
+//
+.slider_i_more {
+  background-color: rgba(255, 255, 255, .46);
+  color: #fff;
+  display: inline-block;
+  line-height: 4rem;
+  position: absolute;
+  left: 50%;
+  bottom: 9rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  @include size(20rem, 4rem);
+  @include prefixes(transform, translate(-50%, 0));
+}
 
 
 
@@ -614,6 +764,55 @@ h2 {font-size: 5rem;}
     position: absolute;
     visibility: hidden;
     @include size(0, 0);
+  }
+}
+//
+// .. Select
+//
+.form_select {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  line-height: 5rem;
+  padding: 0 1rem;
+  position: relative;
+  white-space: nowrap;
+  @include size(100%, 5rem);
+  @include prefixes(box-sizing, border-box);
+  &::after {
+    background-image: url(/assets/images/dropdown.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 5rem;
+  }
+  &:hover {
+    &::after {
+      @include prefixes(transform, rotate(180deg));
+    }
+  }
+  p {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  ul {
+    display: none;
+    position: absolute;
+    right: -.1rem;
+    top: 100%;
+    left: -.1rem;
+    z-index: 9998;
+    li {
+      cursor: pointer;
+      overflow: hidden;
+      padding: 0 1rem;
+      white-space: nowrap;
+      &:hover {background-color: #fff; color: #000;}
+    }
   }
 }
 

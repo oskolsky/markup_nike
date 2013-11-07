@@ -26,7 +26,7 @@
               %input{type: "text", class: "form_input"}
             .cols_i.__half
               %label.form_label Мобильный телефон
-              %input{type: "text", class: "form_input"}
+              %input{type: "text", class: "form_input __phone"}
         .form_row
           .cols
             .cols_i.__half
@@ -34,7 +34,14 @@
               %input{type: "text", class: "form_input"}
             .cols_i.__half
               %label.form_label Категория
-              %input{type: "text", class: "form_input"}
+              .form_select
+                %p
+                %ul
+                  %li{data: {value: "0", select: "select"}} Выберите из списка
+                  %li{data: {value: "1"}} Первая категория для выбора
+                  %li{data: {value: "2"}} Вторая категория для выбора
+                  %li{data: {value: "3"}} Третья категория для выбора
+                %input{type: "hidden"}
         .form_row
           .cols
             .cols_i.__full
