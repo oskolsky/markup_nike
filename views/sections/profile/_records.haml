@@ -1,0 +1,80 @@
+%section#records.section.__records{role: "region", "aria-label" => "My records"}
+
+  %header.section_header
+    %h1.section_title
+      &#35;Мои
+      %span рекорды
+    %p История ваших операций по&nbsp;карте почётного клиента.
+
+  %section.section_body
+    %table.table
+      %thead
+        %tr
+          %th Дата<br>покупки
+          %th Тип<br>операции
+          %th.tx.__right Сумма
+          %th Акция
+          %th Магазин
+          %th.tx.__right Ожидаемое<br>начисление
+          %th.tx.__right Начисленные<br>бонусные<br>рубли
+      %tbody
+        %tr
+          %td 22.05.13
+          %td Покупка
+          %td.tx.__right
+            %sapn.js-format-money 223470
+          %td #Станькачком
+          %td МЕГТПЛСТН
+          %td.tx.__right
+            %sapn.js-format-money 2000
+          %td.tx.__right
+            %sapn.js-format-money 0
+        %tr
+          %td 22.05.13
+          %td Возврат
+          %td.tx.__right
+            %sapn.js-format-money 223470
+          %td #Станькачком
+          %td МЕГТПЛСТН
+          %td.tx.__right
+            %sapn.js-format-money -2000
+          %td.tx.__right
+            %sapn.js-format-money 0
+        %tr
+          %td 10.07.13
+          %td Получение<br>подарочной<br>карты
+          %td.tx.__right
+            %sapn.js-format-money -
+          %td -
+          %td Большой<br>проспект, 84
+          %td.tx.__right
+            %sapn.js-format-money -
+          %td.tx.__right
+            %sapn.js-format-money -
+        %tr
+          %td 10.07.13
+          %td Привлечение<br>друга<br>в программу
+          %td.tx.__right
+            %sapn.js-format-money -
+          %td &nbsp;
+          %td -
+          %td.tx.__right
+            %sapn.js-format-money 0
+          %td.tx.__right
+            %sapn.js-format-money 500
+        %tr.table_hr
+          %td{colspan: 8}
+            %div
+        %tr.table_balance
+          %td{colspan: 6}
+            %sapn.table_balance_current Текущий баланс
+          %td
+            %sapn.table_balance_current.js-format-money 500
+        %tr.table_balance
+          %td{colspan: 6} Для получения вознаграждения осталось
+          %td
+            %sapn.js-format-money 24500
+
+  %footer.section_footer
+    .form
+      %a{href: "#", class: "form_button"} Архив операций

@@ -109,6 +109,12 @@ h2 {font-size: 5rem;}
     }
   }
 }
+//
+// .. Style
+//
+.tx.__left   {text-align: left;}
+.tx.__center {text-align: center;}
+.tx.__right  {text-align: right;}
 
 
 
@@ -393,107 +399,143 @@ h2 {font-size: 5rem;}
       .form_button {background-color: #ff5c21;}
     }
   }
+  //
+  // .. Banner
+  //
+  &.__banner {
+    background: url(/assets/images/profile_bg.png) 0 0 repeat-x;
+    height: 390px;
+    padding: 0;
+  }
+  //
+  // .. Profile
+  //
+  &.__profile {
+    background-color: #183a5f;
+    color: #000;
+    .section_header {
+      margin-bottom: 5rem;
+      .section_title {
+        color: #d4e3e8;
+        margin-bottom: 1rem;
+        span {color: #ff6a4f;}
+      }
+      p {
+        color: #fff;
+        opacity: .8;
+      }
+    }
+    .section_body {
+      margin-bottom: 7rem;
+      .form_input, .form_textarea, .form_file {
+        background-color: #304e6f;
+        border: .1rem solid #98a7b7;
+      }
+      .form_label {
+        color: #fff;
+        opacity: .5;
+      }
+    }
+    .section_footer {
+      .form_button {background-color: #ff6a4f;}
+    }
+  }
+  //
+  // .. Secrets
+  //
+  &.__secrets {
+    background-color: #1e74a1;
+    color: #000;
+    .section_header {
+      margin-bottom: 5rem;
+      .section_title {
+        color: #fff;
+        margin-bottom: 1rem;
+        span {color: #183a5f;}
+      }
+      p {
+        color: #fff;
+        opacity: .8;
+      }
+    }
+    .section_body {
+      margin-bottom: 7rem;
+      .form_input, .form_textarea, .form_file {
+        background-color: #3582ab;
+        border: .1rem solid #9ac1d5;
+      }
+      .form_label {
+        color: #fff;
+        opacity: .8;
+      }
+      .form_select {
+        background-color: #3582ab;
+        border: .1rem solid #9ac1d5;
+        &::after {background-color: #b6d2e1;}
+        ul {
+          background-color: #3582ab;
+          border-right:  .1rem solid #9ac1d5;
+          border-bottom: .1rem solid #9ac1d5;
+          border-left:   .1rem solid #9ac1d5;
+          li {&:hover {opacity: .5;}}
+        }
+      }
+    }
+    .section_footer {
+      .form_button {background-color: #ff6a4f;}
+    }
+  }
+  //
+  // .. Records
+  //
+  &.__records {
+    background-color: #235977;
+    color: #000;
+    .section_header {
+      margin-bottom: 3rem;
+      .section_title {
+        color: #fff;
+        margin-bottom: 1rem;
+        span {color: #ff6a4f;}
+      }
+      p {
+        color: #fff;
+        opacity: .8;
+      }
+    }
+    .section_body {
+      margin-bottom: 7rem;
+    }
+    .section_footer {
+      .form_button {background-color: #ff6a4f;}
+    }
+  }
+  //
+  // .. History
+  //
+  &.__history {
+    background-color: #2d444c;
+    color: #000;
+    .section_header {
+      margin-bottom: 3rem;
+      .section_title {
+        color: #fff;
+        margin-bottom: 1rem;
+        span {color: #ff6a4f;}
+      }
+      p {
+        color: #fff;
+        opacity: .8;
+      }
+    }
+    .section_body {
+
+    }
+    .section_footer {
+
+    }
+  }
 }
-
-
-
-
-
-//  //
-//  // .. Banner
-//  //
-//  &.__banner {
-//    background: #a9a9b0 url(/assets/images/banner_profile.png) center bottom no-repeat;
-//    padding-bottom: 6rem;
-//  }
-//  //
-//  // .. My profile
-//  //
-//  &.__profile {
-//    background-color: #183a5f;
-//    padding-bottom: 6rem;
-//    .section_header {
-//      color: #d1d8df;
-//      margin-bottom: 4.5rem;
-//    }
-//      .section_title {
-//        color: #d4e3e8;
-//        margin-bottom: 1rem;
-//        span {color: #ff6a4f;}
-//      }
-//    .section_body {
-//      margin-bottom: 5rem;
-//    }
-//      .form_input, .form_textarea, .form_file {
-//        background-color: #304e6f;
-//        border: .1rem solid #98a7b7;
-//      }
-//      .form_label {color: #8c9daf;}
-//    .button {background-color: #ff6a4f;}
-//  }
-//  //
-//  // .. My secrets
-//  //
-//  &.__secrets {
-//    background-color: #1e74a1;
-//    padding-bottom: 6rem;
-//    .section_header {
-//      color: #d2e3ec;
-//      margin-bottom: 4.5rem;
-//    }
-//      .section_title {
-//        color: #fff;
-//        margin-bottom: 1rem;
-//        span {
-//          color: #183a5f;
-//        }
-//      }
-//    .section_body {
-//      margin-bottom: 5rem;
-//    }
-//      .form_input, .form_textarea, .form_file {
-//        background-color: #3582ab;
-//        border: .1rem solid #9ac1d5;
-//      }
-//      .form_label {color: #bcd6e3;}
-//    .button {background-color: #ff6a4f;}
-//  }
-//  //
-//  // .. My records
-//  //
-//  &.__records {
-//    background-color: #235977;
-//    .section_header {
-//      color: #c6cfd6;
-//    }
-//      .section_title {
-//        color: #fff;
-//        margin-bottom: 1rem;
-//        span {
-//          color: #ff6a4f;
-//        }
-//      }
-//    .section_body {
-//      table {
-//        thead {
-//          background-color: #336581;
-//          th {
-//            color: #99b2c0;
-//            font-size: 1.5rem;
-//            font-weight: 400;
-//            text-align: left;
-//            text-transform: uppercase;
-//          }
-//        }
-//        tbody {
-//          td {
-//
-//          }
-//        }
-//      }
-//    }
-//  }
-//}
 
 
 
@@ -646,7 +688,9 @@ h2 {font-size: 5rem;}
 //
 //****************************************************************************************************
 .banner {
-  color: #404040;
+  background: url(/assets/images/profile_banner.png) center top no-repeat;
+  height: 100%;
+  padding-top: 12rem;
   text-align: center;
 }
 .banner_title {
@@ -656,6 +700,9 @@ h2 {font-size: 5rem;}
   line-height: 1;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
+}
+.banner_tx {
+  color: #fff;
 }
 
 
@@ -732,6 +779,20 @@ h2 {font-size: 5rem;}
   padding: 0 1rem;
   @include size(100%, 5rem);
   @include prefixes(box-sizing, border-box);
+}
+//
+// .. Input iconed
+//
+.form_input_iconed {
+  position: relative;
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    z-index: 9998;
+    @include prefixes(transform, translate(0, -50%));
+  }
+  .form_input {padding-left: 6rem;}
 }
 //
 // .. Textarea
@@ -816,6 +877,86 @@ h2 {font-size: 5rem;}
   }
 }
 
+
+
+//****************************************************************************************************
+//
+// .. TABLE
+//
+//****************************************************************************************************
+.table {
+  margin: 0 auto;
+  thead {
+    background-color: rgba(255, 255, 255, .07);
+    th {
+      &:last-child {padding-right: 1rem;}
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: 400;
+      opacity: .5;
+      padding: 1.5rem 4rem 1.5rem 1rem;
+      text-align: left;
+      text-transform: uppercase;
+      vertical-align: middle;
+    }
+  }
+  tbody {
+    tr {
+      &:first-child {
+        td {padding-top: 2rem;}
+      }
+      td {
+        &:last-child {padding-right: 1rem;}
+      }
+    }
+    td {
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding: 1rem 4rem 1rem 1rem;
+      text-transform: uppercase;
+    }
+  }
+}
+.table_hr {
+  td {
+    padding: 2.5rem 0 1.5rem 0 !important;
+    div {border-top: .1rem solid rgba(255, 255, 255, .3);}
+  }
+}
+.table_balance {
+  text-align: right;
+  td {
+    padding-top: .3rem !important;
+    padding-bottom: .3rem !important;
+  }
+}
+.table_balance_current {color: #ff6a4f;}
+
+
+
+//****************************************************************************************************
+//
+// .. ICONS
+//
+//****************************************************************************************************
+.icon {
+  background-image: url(/assets/images/icons.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: top;
+  @include size(40px,40px);
+  &.__card     {background-position: 0 0;}
+  &.__key      {background-position: -40px 0;}
+  &.__user     {background-position: -80px 0;}
+  &.__mail     {background-position: -120px 0;}
+  &.__lopata   {background-position: -160px 0;}
+  &.__calendar {background-position: -200px 0;}
+  &.__check    {background-position: -240px 0;}
+  &.__uncheck  {background-position: -280px 0;}
+  &.__male     {background-position: -320px 0;}
+  &.__famale   {background-position: -360px 0;}
+}
 
 
 //****************************************************************************************************

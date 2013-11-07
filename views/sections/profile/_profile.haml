@@ -1,0 +1,51 @@
+%section#profile.section.__profile{role: "region", "aria-label" => "My profile"}
+  .ctn
+
+    %header.section_header
+      %h1.section_title
+        &#35;Мой
+        %span профиль
+      %p Укажите основные данные для участия в&nbsp;бонусной программе.
+
+    %section.section_body
+      %form.form
+        .form_row
+          .cols
+            .cols_i.__half
+              %label.form_label Номер карты
+              .form_input_iconed
+                %i.icon.__card
+                %input{type: "text", class: "form_input __card"}
+            .cols_i.__half
+              %label.form_label Пароль
+              .form_input_iconed
+                %i.icon.__key
+                %input{type: "text", class: "form_input"}
+        .form_row
+          .cols
+            .cols_i.__half
+              %label.form_label Имя
+              .form_input_iconed
+                %i.icon.__user
+                %input{type: "text", class: "form_input"}
+            .cols_i.__half
+              %label.form_label Фамилия
+              .form_input_iconed
+                %i.icon.__user
+                %input{type: "text", class: "form_input"}
+        .form_row
+          .cols
+            .cols_i.__half
+              %label.form_label E-mail
+              .form_input_iconed
+                %i.icon.__mail
+                %input{type: "text", class: "form_input"}
+            .cols_i.__half
+              %label.form_label Мобильный телефон
+              .form_input_iconed
+                %i.icon.__lopata
+                %input{type: "text", class: "form_input __phone"}
+
+    %footer.section_footer
+      .form
+        %a{href: "#", class: "form_button js-send-form"} Сохранить
