@@ -96,6 +96,7 @@ h2 {font-size: 5rem;}
   &.__full {width: 720px;}
   &.__half {width: 320px;}
 }
+.m-b_2 {margin-bottom: 2rem !important;}
 //
 // .. Content
 //
@@ -434,6 +435,10 @@ h2 {font-size: 5rem;}
       .form_label {
         color: #fff;
         opacity: .5;
+      }
+      .form_radio {
+        background-color: #304e6f;
+        &[data-checked="true"] {background-color: #ff6a4f;}
       }
     }
     .section_footer {
@@ -876,6 +881,41 @@ h2 {font-size: 5rem;}
     }
   }
 }
+//
+// .. Radio
+//
+.form_radio {
+  &.__fake {
+    display: inline-block;
+    line-height: 5rem;
+    position: relative;
+    @include size(15rem, 5rem);
+    &::before {
+      content: '';
+      background-image: url(/assets/images/icons.png);
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      @include size(40px,40px);
+      @include prefixes(transform, translate(-50%, -50%));
+    }
+    &.__iconed {
+      &.__check    {&::before{background-position: -240px 0;}}
+      &.__uncheck  {&::before{background-position: -280px 0;}}
+      &.__male     {&::before{background-position: -320px 0;}}
+      &.__female   {&::before{background-position: -360px 0;}}
+    }
+  }
+  &.__real {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1002;
+    opacity: 0;
+    @include size(100%, 100%);
+  }
+}
 
 
 
@@ -955,7 +995,7 @@ h2 {font-size: 5rem;}
   &.__check    {background-position: -240px 0;}
   &.__uncheck  {background-position: -280px 0;}
   &.__male     {background-position: -320px 0;}
-  &.__famale   {background-position: -360px 0;}
+  &.__female   {background-position: -360px 0;}
 }
 
 
