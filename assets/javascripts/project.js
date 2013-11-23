@@ -11,7 +11,7 @@ $(function() {
 
   // Mask input
   $('.form_input.__date').mask('99/99/9999');
-  $('.form_input.__phone').mask('(999) 999-9999');
+  $('.form_input.__phone').mask('+7 (999) 999-9999');
   $('.form_input.__card').mask('9999999999999');
 
   // Global send form
@@ -80,6 +80,15 @@ $(function() {
       $('section.__slider_more.__' + rel).slideUp();
       $(this).text('Подробнее');
     }
+    return false;
+  });
+
+  // Login popup
+  $('#login').click(function() {
+    $.arcticmodal({
+      type: 'ajax',
+      url: '/views/dialogs/_login.html'
+    });
     return false;
   });
 

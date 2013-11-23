@@ -5,10 +5,10 @@
 //****************************************************************************************************
 @mixin prefixes($property, $value) {
   -webkit-#{$property}: $value;
-     -moz-#{$property}: $value;
-      -ms-#{$property}: $value;
-       -o-#{$property}: $value;
-          #{$property}: $value;
+  -moz-#{$property}: $value;
+  -ms-#{$property}: $value;
+  -o-#{$property}: $value;
+  #{$property}: $value;
 }
 @mixin size($w, $h) {
   width:  #{$w};
@@ -30,9 +30,9 @@
   font-family: 'futurafuturiscondextraboldcRg';
   src: url('/assets/fonts/Futura/futura-webfont.eot');
   src: url('/assets/fonts/Futura/futura-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/assets/fonts/Futura/futura-webfont.woff') format('woff'),
-       url('/assets/fonts/Futura/futura-webfont.ttf') format('truetype'),
-       url('/assets/fonts/Futura/futura-webfont.svg#futurafuturiscondextraboldcRg') format('svg');
+  url('/assets/fonts/Futura/futura-webfont.woff') format('woff'),
+  url('/assets/fonts/Futura/futura-webfont.ttf') format('truetype'),
+  url('/assets/fonts/Futura/futura-webfont.svg#futurafuturiscondextraboldcRg') format('svg');
 }
 
 @font-face {
@@ -55,7 +55,7 @@
 html {
   font-size: 62.5%;
   -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 body {
   min-width: 1200px;
@@ -179,9 +179,9 @@ h2 {font-size: 5rem;}
   }
 }
 //
-// .. Go to profile
+// .. Login
 //
-.go-to-profile {
+.login, .logout {
   @include prefixes(transform, translate(0, -50%));
   @include prefixes(box-sizing, border-box);
   position: absolute;
@@ -262,6 +262,10 @@ h2 {font-size: 5rem;}
     display: none;
     padding: 3.5rem 0 8rem;
     text-align: center;
+    &.__1 {
+      background-color: #000;
+      color: #fff;
+    }
     &.__2 {
       background-color: #000;
       color: #fff;
@@ -273,6 +277,10 @@ h2 {font-size: 5rem;}
     &.__4 {
       background-color: #e2e2e2;
       color: #000;
+    }
+    &.__7 {
+      background-color: #9c0f17;
+      color: #fff;
     }
   }
   //
@@ -388,10 +396,10 @@ h2 {font-size: 5rem;}
         background-color: #3b618a;
         &::after {background-color: #b8c6d5;}
         ul {
-          background-color: #3b618a;
           border-right:  .1rem solid #9db0c5;
           border-bottom: .1rem solid #9db0c5;
           border-left:   .1rem solid #9db0c5;
+          background-color: #3b618a;
           li {&:hover {opacity: .5;}}
         }
       }
@@ -478,10 +486,10 @@ h2 {font-size: 5rem;}
         background-color: #3582ab;
         &::after {background-color: #b6d2e1;}
         ul {
-          background-color: #3582ab;
           border-right:  .1rem solid #9ac1d5;
           border-bottom: .1rem solid #9ac1d5;
           border-left:   .1rem solid #9ac1d5;
+          background-color: #3582ab;
           li {&:hover {opacity: .5;}}
         }
       }
@@ -594,6 +602,15 @@ h2 {font-size: 5rem;}
     .slider_i_title {color: #ff6a4f;}
     .slider_i_tx    {color: #000; opacity: .7;}
   }
+  &.__07 {
+    padding-top: 19.5rem;
+    background: #9c0f17 url(/assets/images/slider/slide_07.jpg) center no-repeat;
+    .slider_i_title {
+      color: #fffeff;
+      span {color: #9d0009;}
+    }
+    .slider_i_tx    {color: #fffeff; text-transform: uppercase;}
+  }
 }
 .slider_i_title {
   margin-bottom: .5rem;
@@ -680,10 +697,10 @@ h2 {font-size: 5rem;}
 .stores_i_caption_mark {
   &:not(:last-child) {margin-bottom: 1.5rem;}
 }
-  .stores_i_name     {color: #1a6264;}
-  .stores_i_address  {color: #fff;}
-  .stores_i_phone    {color: #fff;}
-  .stores_i_email {a {color: #fff;}}
+.stores_i_name     {color: #1a6264;}
+.stores_i_address  {color: #fff;}
+.stores_i_phone    {color: #fff;}
+.stores_i_email {a {color: #fff;}}
 
 
 
@@ -784,6 +801,10 @@ h2 {font-size: 5rem;}
   display: block;
   padding: 0 1rem;
   color: #fff;
+  &[disabled="disabled"] {
+    border-color: transparent !important;
+    color: #cd6254;
+  }
 }
 //
 // .. Input iconed
@@ -997,6 +1018,30 @@ h2 {font-size: 5rem;}
   &.__male     {background-position: -320px 0;}
   &.__female   {background-position: -360px 0;}
 }
+
+
+
+//****************************************************************************************************
+//
+// .. DIALOGS
+//
+//****************************************************************************************************
+.dialog {
+  padding: 7rem 20rem;
+  background-color: #163961;
+  &.__login {
+    .form_input, .form_textarea, .form_file {
+      border: .1rem solid #95a8b7;
+      background-color: #2f4d71;
+    }
+    .form_label {
+      color: #fff;
+      opacity: .5;
+    }
+    .form_button {background-color: #ff6948;}
+  }
+}
+
 
 
 //****************************************************************************************************
