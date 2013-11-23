@@ -48,14 +48,18 @@
               %label.form_label Сообщение
               %textarea{rows: 10, class: "form_textarea"}
         .form_row
-          .cols
+          %article.cnt.tx.__center.m-b_4
+            %p Прикрепите&nbsp;файлы&nbsp;к&nbsp;сообщению&nbsp;формы.<br>Максимальный размер файла&nbsp;&mdash; 1&nbsp;мб. Максимальное количество&nbsp;&mdash; 5&nbsp;штук.
+        .form_row
+          .cols.tx.__center
             .cols_i.__half
-              %article.cnt
-                %p Прикрепите&nbsp;файлы&nbsp;к&nbsp;сообщению&nbsp;формы.<br>Максимальный размер файла&nbsp;&mdash; 1&nbsp;мб.<br>Максимальное количество&nbsp;&mdash; 5&nbsp;штук.
-            .cols_i.__half
-              .form_file.form_el.__fake{data: {placeholder: "Добавить файл"}}
-                %p &nbsp;
-                %input.form_file.form_el.__real{type: "file"}
+              #fileupload
+                .form_file-wrapper
+                  %a{href: "#", class: "form_file_remove"}
+                    %img{src: "/assets/images/remove.png", alt: "Удалить"}
+                  .form_file.form_el.__fake{data: {placeholder: "Добавить файл"}}
+                    %p &nbsp;
+                    %input.form_file.form_el.__real{type: "file"}
 
     %footer.section_footer
       .form
