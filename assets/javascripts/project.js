@@ -87,7 +87,13 @@ $(function() {
   $('#login').click(function() {
     $.arcticmodal({
       type: 'ajax',
-      url: '/views/dialogs/_login.html'
+      url: '/views/dialogs/_login.html',
+      beforeOpen: function() {
+        $('#header').css('margin-right', '17px');
+      },
+      afterClose: function() {
+        $('#header').css('margin-right', '0');
+      }
     });
     return false;
   });
