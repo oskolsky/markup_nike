@@ -120,6 +120,30 @@ $(function() {
     parent.find('ul').hide();
   });
 
+  // Add file
+  $(document).on('change', '.form_file.form_el.__real', function() {
+    var tpl = '' +
+      '<div class="form_file-wrapper">' +
+      '<a href="#" class="form_file_remove">' +
+      '<img src="/assets/images/remove.png" alt="Удалить">' +
+      '</a>' +
+      '<div class="form_file form_el __fake" data-placeholder="Добавить файл">' +
+      '<p>&nbsp;</p>' +
+      '<input type="file" class="form_file form_el __real">' +
+      '</div>' +
+      '</div>';
+    $el = $(tpl);
+    $el.customForm();
+    $('#fileupload').append($el);
+    $(this).closest('.form_file-wrapper').find('.form_file_remove').show();
+  });
+
+  // Remove file
+  $(document).on('click', '.form_file_remove', function() {
+    $(this).closest('.form_file-wrapper').remove();
+    return false;
+  });
+
 });
 
 Number.prototype.formatMoney = function(c, d, t){
