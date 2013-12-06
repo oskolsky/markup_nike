@@ -1,0 +1,16 @@
+.dialog.__login
+  %form.form{action: "/profile.html"}
+    .cols
+      .cols_i.__half
+        .form_row
+          %label.form_label Номер карты
+          .form_input_iconed
+            %i.icon.__card
+            %input.form_input.__card{type: "text"}
+        .form_row
+          %label.form_label Пароль
+          .form_input_iconed
+            %i.icon.__key
+            %input.form_input{type: "password"}
+        .form_row
+          %input.form_button{type: "submit", value: "Войти в личный кабинет"}

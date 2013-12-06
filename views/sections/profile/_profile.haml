@@ -20,7 +20,7 @@
               %label.form_label Пароль
               .form_input_iconed
                 %i.icon.__key
-                %input{type: "text", class: "form_input"}
+                %input{type: "password", class: "form_input"}
         .form_row
           .cols
             .cols_i.__half
@@ -49,7 +49,7 @@
           .cols
             .cols_i.__half
               %label.form_label.m-b_2 Подписка на рассылки по e-mail
-              %span{style: "margin-right: 2rem;"}
+              %span{style: "margin-right: 20px;"}
                 %span.form_radio.form_el.__fake.__iconed.__check
                   %input.form_radio.form_el.__real{type: "radio", name: "radio1", checked: "checked"}
               %span
@@ -57,7 +57,7 @@
                   %input.form_radio.form_el.__real{type: "radio", name: "radio1"}
             .cols_i.__half
               %label.form_label.m-b_2 Подписка на sms-рассылки
-              %span{style: "margin-right: 2rem;"}
+              %span{style: "margin-right: 20px;"}
                 %span.form_radio.form_el.__fake.__iconed.__check
                   %input.form_radio.form_el.__real{type: "radio", name: "radio2", checked: "checked"}
               %span
@@ -65,9 +65,9 @@
                   %input.form_radio.form_el.__real{type: "radio", name: "radio2"}
         .form_row
           .cols.tx.__center
-            .cols_i.__half.tx.__left
+            .cols_i.__half.tx.__left>
               %label.form_label.m-b_2 Пол
-              %span{style: "margin-right: 2rem;"}
+              %span{style: "margin-right: 20px;"}
                 %span.form_radio.form_el.__fake.__iconed.__male
                   %input.form_radio.form_el.__real{type: "radio", name: "radio3", checked: "checked"}
               %span

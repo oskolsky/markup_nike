@@ -1,5 +1,8 @@
 $(function() {
 
+  // Scroll width check
+  scrollWidth();
+
   // Form init
   $('.form').customForm();
 
@@ -89,7 +92,10 @@ $(function() {
       type: 'ajax',
       url: '/views/dialogs/_login.html',
       beforeOpen: function() {
-        $('#header').css('margin-right', '17px');
+        $('#header').css('margin-right', document.scrollbarWidth + 'px');
+      },
+      afterOpen: function() {
+        $('.form_input.__card').mask('9999999999999');
       },
       afterClose: function() {
         $('#header').css('margin-right', '0');
@@ -155,4 +161,18 @@ Number.prototype.formatMoney = function(c, d, t){
     i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "",
     j = (j = i.length) > 3 ? j % 3 : 0;
   return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
+}
+
+function scrollWidth() {
+  // Create the measurement node
+  var scrollDiv = document.createElement("div");
+  scrollDiv.className = "scrollbar-measure";
+  document.body.appendChild(scrollDiv);
+
+  // Get the scrollbar width
+  var scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+  document.scrollbarWidth = scrollbarWidth;
+
+  // Delete the DIV 
+  document.body.removeChild(scrollDiv);
 }
