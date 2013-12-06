@@ -86,15 +86,18 @@ $(function() {
     return false;
   });
 
-  // Login popup
-  $('#login').click(function() {
+  // Open popup
+  $(document).on('click touchend', '[data-dialog]', function() {
+    $.arcticmodal('close');
+    var id = $(this).data('dialog');
     $.arcticmodal({
       type: 'ajax',
-      url: '/views/dialogs/_login.html',
+      url: '/views/dialogs/_' + id + '.html',
       beforeOpen: function() {
         $('#header').css('margin-right', document.scrollbarWidth + 'px');
       },
       afterOpen: function() {
+        $('#header').css('margin-right', document.scrollbarWidth + 'px');
         $('.form_input.__card').mask('9999999999999');
       },
       afterClose: function() {
