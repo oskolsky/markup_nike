@@ -51,18 +51,18 @@
               %label.form_label.m-b_2 Подписка на рассылки по e-mail
               %span{style: "margin-right: 20px;"}
                 %span.form_radio.form_el.__fake.__iconed.__check
-                  %input.form_radio.form_el.__real{type: "radio", name: "radio1", checked: "checked"}
+                  %input.form_radio.form_el.__real.js-subscription{type: "radio", name: "radio1", checked: "checked", data: {action: "on"}}
               %span
                 %span.form_radio.form_el.__fake.__iconed.__uncheck
-                  %input.form_radio.form_el.__real{type: "radio", name: "radio1"}
+                  %input.form_radio.form_el.__real.js-subscription{type: "radio", name: "radio1", data: {action: "off"}}
             .cols_i.__half
               %label.form_label.m-b_2 Подписка на sms-рассылки
               %span{style: "margin-right: 20px;"}
                 %span.form_radio.form_el.__fake.__iconed.__check
-                  %input.form_radio.form_el.__real{type: "radio", name: "radio2", checked: "checked"}
+                  %input.form_radio.form_el.__real.js-subscription{type: "radio", name: "radio2", checked: "checked", data: {action: "on"}}
               %span
                 %span.form_radio.form_el.__fake.__iconed.__uncheck
-                  %input.form_radio.form_el.__real{type: "radio", name: "radio2"}
+                  %input.form_radio.form_el.__real.js-subscription{type: "radio", name: "radio2", data: {action: "off"}}
         .form_row
           .cols.tx.__center
             .cols_i.__half.tx.__left

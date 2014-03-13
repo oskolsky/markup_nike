@@ -18,7 +18,6 @@ $(function() {
     return false;
   });
 
-
   // Format money
   $('.js-format-money').each(function() {
     var value = $(this).text();
