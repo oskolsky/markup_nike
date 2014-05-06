@@ -3,9 +3,9 @@
 
     %header.section_header
 
-    %section.section_body
+    %div.section_body
       .cols
-        .cols_i.__half
+        .cols_i.__half>
           %h2.section_title Напишите нам
         .cols_i.__half
           %article.cnt
@@ -13,15 +13,17 @@
       %form.form#feedback-form
         .form_row
           .cols
-            .cols_i.__half
+            .cols_i.__half>
               %label.form_label Имя
               %input{type: "text", class: "form_input"}
             .cols_i.__half
-              %article.cnt
-                %p Пожалуйста, укажите один из&nbsp;способов&nbsp;контакта с&nbsp;вами, иначе мы&nbsp;не&nbsp;сможем связаться с&nbsp;вами и&nbsp;ответить.
+              %label.form_label Город
+              %input#autocomplete{type: "text", class: "form_input"}
+              -# %article.cnt
+                -# %p Пожалуйста, укажите один из&nbsp;способов&nbsp;контакта с&nbsp;вами, иначе мы&nbsp;не&nbsp;сможем связаться с&nbsp;вами и&nbsp;ответить.
         .form_row
           .cols
-            .cols_i.__half
+            .cols_i.__half>
               %label.form_label E-mail
               %input{type: "text", class: "form_input"}
             .cols_i.__half
@@ -29,7 +31,7 @@
               %input{type: "text", class: "form_input __phone"}
         .form_row
           .cols
-            .cols_i.__half
+            .cols_i.__half>
               %label.form_label Тема
               %input{type: "text", class: "form_input"}
             .cols_i.__half

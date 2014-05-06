@@ -80,6 +80,9 @@ h1, h2 {
 h1 {font-size: 70px;}
 h2 {font-size: 50px;}
 
+//
+// .. Container
+//
 .ctn {
   margin: 0 auto;
   width: 800px;
@@ -785,7 +788,45 @@ h2 {font-size: 50px;}
   text-decoration: none;  
 }
 
- 
+//
+// .. Autocomplete
+//
+.ui-helper-hidden-accessible {
+  display: none;
+}
+.ui-autocomplete {
+  @include prefixes(box-sizing, border-box);
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 9998;
+  display: none;
+  width: 318px;
+  border-right:  1px solid #9db0c5;
+  border-bottom: 1px solid #9db0c5;
+  border-left:   1px solid #9db0c5;
+  background-color: #3b618a;
+}
+  .ui-menu-item {
+    a {
+      @include prefixes(box-sizing, border-box);
+      @include size(100%, 50px);
+      display: block;
+      overflow: hidden;
+      padding: 0 10px;
+      color: #fff;
+      white-space: nowrap;
+      line-height: 50px;
+      cursor: pointer;
+      &.ui-state-focus {
+        background-color: #fff;
+        color: #000;
+        opacity: .5;
+      }
+    }
+  }
+
+
 
 //****************************************************************************************************
 //
