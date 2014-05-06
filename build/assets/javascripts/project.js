@@ -6,6 +6,35 @@ $(function() {
   // Form init
   $('.form').customForm();
 
+  // .. Autocomplete init
+  var availableTags = [
+      "Москва",
+      "Воронеж",
+      "Екатеринбург",
+      "Краснодар",
+      "Астрахань",
+      "Белгород",
+      "Волгоград",
+      "Калининград",
+      "Липецк",
+      "Нижний Новгород",
+      "Новосибирск",
+      "Омск",
+      "Оренбург",
+      "Ростов на Дону",
+      "Самара",
+      "Саратов",
+      "Сочи",
+      "Сургут",
+      "Тольяти",
+      "Тула",
+      "Пермь",
+      "Рязань"
+  ];
+  $('#autocomplete').autocomplete({
+    source: availableTags
+  });    
+
   // Form radio disable
   $('.js-subscription').change(function() {
     var action = $(this).data('action');
@@ -17,6 +46,7 @@ $(function() {
     $('.form').customForm();
     return false;
   });
+
 
   // Format money
   $('.js-format-money').each(function() {

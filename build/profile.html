@@ -13,6 +13,7 @@
     <link href='/assets/stylesheets/jquery.arcticmodal-0.3.css' rel='stylesheet'>
     <link href='/assets/stylesheets/project.css' rel='stylesheet'>
     <script src='/assets/javascripts/vendor/jquery-2.0.3.min.js'></script>
+    <script src='/assets/javascripts/vendor/jquery-ui-1.10.4.js'></script>
     <script src='/assets/javascripts/vendor/jquery.cycle2.min.js'></script>
     <script src='/assets/javascripts/vendor/jquery.cycle2.swipe.min.js'></script>
     <script src='/assets/javascripts/vendor/jquery.maskedinput.js'></script>
@@ -63,18 +64,16 @@
             </h1>
             <p>Укажите основные данные для участия в&nbsp;бонусной программе.</p>
           </header>
-          <section class='section_body'>
+          <div class='section_body'>
             <form class='form'>
               <div class='form_row'>
-                <div class='cols'>
-                  <div class='cols_i __half'>
+                <div class='cols'><div class='cols_i __half'>
                     <label class='form_label'>Номер карты</label>
                     <div class='form_input_iconed'>
                       <i class='icon __card'></i>
                       <input class='form_input' disabled='disabled' type='text' value='123456789012'>
                     </div>
-                  </div><!--
-                  --><div class='cols_i __half'>
+                  </div><div class='cols_i __half'>
                     <label class='form_label'>Пароль</label>
                     <div class='form_input_iconed'>
                       <i class='icon __key'></i>
@@ -84,15 +83,13 @@
                 </div>
               </div>
               <div class='form_row'>
-                <div class='cols'>
-                  <div class='cols_i __half'>
+                <div class='cols'><div class='cols_i __half'>
                     <label class='form_label'>Имя</label>
                     <div class='form_input_iconed'>
                       <i class='icon __user'></i>
                       <input class='form_input' type='text'>
                     </div>
-                  </div><!--
-                  --><div class='cols_i __half'>
+                  </div><div class='cols_i __half'>
                     <label class='form_label'>Фамилия</label>
                     <div class='form_input_iconed'>
                       <i class='icon __user'></i>
@@ -102,15 +99,13 @@
                 </div>
               </div>
               <div class='form_row'>
-                <div class='cols'>
-                  <div class='cols_i __half'>
+                <div class='cols'><div class='cols_i __half'>
                     <label class='form_label'>E-mail</label>
                     <div class='form_input_iconed'>
                       <i class='icon __mail'></i>
                       <input class='form_input' type='text'>
                     </div>
-                  </div><!--
-                  --><div class='cols_i __half'>
+                  </div><div class='cols_i __half'>
                     <label class='form_label'>Мобильный телефон</label>
                     <div class='form_input_iconed'>
                       <i class='icon __lopata'></i>
@@ -120,27 +115,34 @@
                 </div>
               </div>
               <div class='form_row'>
-                <div class='cols'>
-                  <div class='cols_i __half'>
-                    <label class='form_label m-b_2'>Подписка на рассылки по e-mail</label>
-                    <span style='margin-right: 20px;'><span class='form_radio form_el __fake __iconed __check'><input checked='checked' class='form_radio form_el __real js-subscription' name='radio1' type='radio' data-action='on'></span></span><span><span class='form_radio form_el __fake __iconed __uncheck'><input class='form_radio form_el __real js-subscription' name='radio1' type='radio' data-action='off'></span></span>
-                  </div><!--
-                  --><div class='cols_i __half'>
-                    <label class='form_label m-b_2'>Подписка на sms-рассылки</label>
-                    <span style='margin-right: 20px;'><span class='form_radio form_el __fake __iconed __check'><input checked='checked' class='form_radio form_el __real js-subscription' name='radio2' type='radio' data-action='on'></span></span><span><span class='form_radio form_el __fake __iconed __uncheck'><input class='form_radio form_el __real js-subscription' name='radio2' type='radio' data-action='off'></span></span>
+                <div class='cols'><div class='cols_i __half'>
+                    <label class='form_label m-b_2'>Подписка на рассылки по e-mail</label><span style='margin-right: 20px;'><span class='form_radio form_el __fake __iconed __check'>
+                        <input checked='checked' class='form_radio form_el __real js-subscription' data-action='on' name='radio1' type='radio'>
+                      </span></span><span><span class='form_radio form_el __fake __iconed __uncheck'>
+                        <input class='form_radio form_el __real js-subscription' data-action='off' name='radio1' type='radio'>
+                      </span></span>
+                  </div><div class='cols_i __half'>
+                    <label class='form_label m-b_2'>Подписка на sms-рассылки</label><span style='margin-right: 20px;'><span class='form_radio form_el __fake __iconed __check'>
+                        <input checked='checked' class='form_radio form_el __real js-subscription' data-action='on' name='radio2' type='radio'>
+                      </span></span><span><span class='form_radio form_el __fake __iconed __uncheck'>
+                        <input class='form_radio form_el __real js-subscription' data-action='off' name='radio2' type='radio'>
+                      </span></span>
                   </div>
                 </div>
               </div>
               <div class='form_row'>
                 <div class='cols tx __center'>
                   <div class='cols_i __half tx __left'>
-                    <label class='form_label m-b_2'>Пол</label>
-                    <span style='margin-right: 20px;'><span class='form_radio form_el __fake __iconed __male'><input checked='checked' class='form_radio form_el __real' name='radio3' type='radio'></span></span><span><span class='form_radio form_el __fake __iconed __female'><input class='form_radio form_el __real' name='radio3' type='radio'></span></span>
+                    <label class='form_label m-b_2'>Пол</label><span style='margin-right: 20px;'><span class='form_radio form_el __fake __iconed __male'>
+                        <input checked='checked' class='form_radio form_el __real' name='radio3' type='radio'>
+                      </span></span><span><span class='form_radio form_el __fake __iconed __female'>
+                        <input class='form_radio form_el __real' name='radio3' type='radio'>
+                      </span></span>
                   </div>
                 </div>
               </div>
             </form>
-          </section>
+          </div>
           <footer class='section_footer'>
             <div class='form'>
               <a class='form_button js-send-form' href='#'>Сохранить</a>
@@ -157,18 +159,16 @@
             </h1>
             <p>Вы&nbsp;можете ответить на&nbsp;наши дополнительные вопросы<br>и&nbsp;получить за&nbsp;это специальный бонус в&nbsp;размере 500&nbsp;руб.<br>Бонус выплачивается однократно при заполнении всех дополнительных полей.</p>
           </header>
-          <section class='section_body'>
+          <div class='section_body'>
             <form class='form'>
               <div class='form_row'>
-                <div class='cols'>
-                  <div class='cols_i __half'>
+                <div class='cols'><div class='cols_i __half'>
                     <label class='form_label'>Отчество</label>
                     <div class='form_input_iconed'>
                       <i class='icon __user'></i>
                       <input class='form_input __user' type='text'>
                     </div>
-                  </div><!--
-                  --><div class='cols_i __half'>
+                  </div><div class='cols_i __half'>
                     <label class='form_label'>Дата рождения</label>
                     <div class='form_input_iconed'>
                       <i class='icon __calendar'></i>
@@ -178,8 +178,7 @@
                 </div>
               </div>
               <div class='form_row'>
-                <div class='cols'>
-                  <div class='cols_i __half'>
+                <div class='cols'><div class='cols_i __half'>
                     <label class='form_label'>Любимый магазин</label>
                     <div class='form_select'>
                       <p></p>
@@ -191,8 +190,7 @@
                       </ul>
                       <input type='hidden'>
                     </div>
-                  </div><!--
-                  --><div class='cols_i __half'>
+                  </div><div class='cols_i __half'>
                     <label class='form_label'>Любимый магазин</label>
                     <div class='form_select'>
                       <p></p>
@@ -208,8 +206,7 @@
                 </div>
               </div>
               <div class='form_row'>
-                <div class='cols'>
-                  <div class='cols_i __half'>
+                <div class='cols'><div class='cols_i __half'>
                     <label class='form_label'>Как часто вы занимаетесь спортом</label>
                     <div class='form_select'>
                       <p></p>
@@ -221,8 +218,7 @@
                       </ul>
                       <input type='hidden'>
                     </div>
-                  </div><!--
-                  --><div class='cols_i __half'>
+                  </div><div class='cols_i __half'>
                     <label class='form_label'>Вид спорта, которым вы занимаетесь</label>
                     <div class='form_select'>
                       <p></p>
@@ -238,8 +234,7 @@
                 </div>
               </div>
               <div class='form_row'>
-                <div class='cols'>
-                  <div class='cols_i __half'>
+                <div class='cols'><div class='cols_i __half'>
                     <label class='form_label'>Как часто вы покупаете спортивную&nbsp;одежду и обувь</label>
                     <div class='form_select'>
                       <p></p>
@@ -251,8 +246,7 @@
                       </ul>
                       <input type='hidden'>
                     </div>
-                  </div><!--
-                  --><div class='cols_i __half'>
+                  </div><div class='cols_i __half'>
                     <label class='form_label'>Для чего вы приобретаете спортивную&nbsp;одежду и обувь</label>
                     <div class='form_select'>
                       <p></p>
@@ -268,7 +262,7 @@
                 </div>
               </div>
             </form>
-          </section>
+          </div>
           <footer class='section_footer'>
             <div class='form'>
               <a class='form_button js-send-form' href='#'>Сохранить</a>
@@ -284,7 +278,7 @@
           </h1>
           <p>История ваших операций по&nbsp;карте почётного клиента.</p>
         </header>
-        <section class='section_body'>
+        <div class='section_body'>
           <table class='table'>
             <thead>
               <tr>
@@ -379,7 +373,7 @@
               </tr>
             </tbody>
           </table>
-        </section>
+        </div>
         <footer class='section_footer'>
           <div class='form'>
             <a class='form_button' href='#'>Архив операций</a>
@@ -394,7 +388,7 @@
           </h1>
           <p>История вознаграждений по&nbsp;программе.</p>
         </header>
-        <section class='section_body'>
+        <div class='section_body'>
           <table class='table'>
             <thead>
               <tr>
@@ -431,7 +425,7 @@
               </tr>
             </tbody>
           </table>
-        </section>
+        </div>
         <footer class='section_footer'></footer>
       </section>
     </main>
@@ -441,8 +435,7 @@
             <a href='#'>
               <img alt='Inventive Retail Group' height='50' src='/assets/images/irg.jpg' width='50'>
             </a>
-          </div><!--
-          --><div class='cols_i __half'>
+          </div><div class='cols_i __half'>
             <p>© 2013. Inventive Retail Group</p>
           </div>
         </div>

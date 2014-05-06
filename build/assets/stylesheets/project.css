@@ -5,13 +5,11 @@
   font-family: 'futurafuturiscondextraboldcRg';
   src: url("/assets/fonts/Futura/futura-webfont.eot");
   src: url("/assets/fonts/Futura/futura-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Futura/futura-webfont.woff") format("woff"), url("/assets/fonts/Futura/futura-webfont.ttf") format("truetype"), url("/assets/fonts/Futura/futura-webfont.svg#futurafuturiscondextraboldcRg") format("svg"); }
-
 @font-face {
   font-weight: normal;
   font-style: normal;
   font-family: 'TradeGothicW01-BoldCn20';
   src: url("/assets/fonts/TradeGothicW01/TradeGothicW01-BoldCn20.woff") format("woff"); }
-
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
@@ -591,6 +589,46 @@ h2 {
   color: #fff;
   text-decoration: none; }
 
+.ui-helper-hidden-accessible {
+  display: none; }
+
+.ui-autocomplete {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 9998;
+  display: none;
+  width: 318px;
+  border-right: 1px solid #9db0c5;
+  border-bottom: 1px solid #9db0c5;
+  border-left: 1px solid #9db0c5;
+  background-color: #3b618a; }
+
+.ui-menu-item a {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  display: block;
+  overflow: hidden;
+  padding: 0 10px;
+  color: #fff;
+  white-space: nowrap;
+  line-height: 50px;
+  cursor: pointer; }
+  .ui-menu-item a.ui-state-focus {
+    background-color: #fff;
+    color: #000;
+    opacity: .5; }
+
 .form_row:not(:last-child) {
   margin-bottom: 30px; }
 
@@ -775,8 +813,10 @@ h2 {
   top: 0;
   left: 0;
   z-index: 1002;
-  opacity: 0; }
-.form_radio.__real[disabled] {cursor: no-drop !important;}
+  opacity: 0;
+  cursor: pointer; }
+  .form_radio.__real[disabled] {
+    cursor: no-drop; }
 
 .table {
   margin: 0 auto; }
