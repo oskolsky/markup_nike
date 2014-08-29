@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru-RU">
+  <head>
+    <title>Сеть фирменных магазинов Nike</title>
+    <meta charset='utf-8'>
+    <meta content='width=device-width' name='viewport'>
+    <meta content='telephone=no' name='format-detection'>
+    <meta content='' name='description'>
+    <meta content='' name='keywords'>
+    <link href='humans.txt' rel='author'>
+    <link href='/favicon.png' rel='icon'>
+    <link href='/assets/stylesheets/application.css' rel='stylesheet'>
+    <script src='/assets/javascripts/vendor/jquery-2.0.3.min.js'></script>
+    <script src='/assets/javascripts/vendor/jquery-ui-1.10.4.js'></script>
+    <script src='/assets/javascripts/vendor/jquery.cycle2.min.js'></script>
+    <script src='/assets/javascripts/vendor/jquery.cycle2.swipe.min.js'></script>
+    <script src='/assets/javascripts/vendor/jquery.maskedinput.js'></script>
+    <script src='/assets/javascripts/vendor/jquery.arcticmodal-0.3.min.js'></script>
+    <script src='/assets/javascripts/forms.js'></script>
+    <script src='/assets/javascripts/project.js'></script>
+  </head>
+  <body class="page" id="page">
+    <main class="main" id="main" role="main">
+      <header class='header' id='header' role='banner'>
+        <div class='ctn'>
+          <nav class='navigation' role='navigation'>
+            <a href='/profile'>
+              <img alt='Меню' height='24' src='/assets/images/menu.png' width='31'>
+              <span>Меню</span>
+            </a>
+            <ul class='menu' id='menu'>
+              <li class='menu_i'>
+                <a class='menu_i_a' href='#profile'>Мой профиль</a>
+              </li>
+              <li class='menu_i'>
+                <a class='menu_i_a' href='#secrets'>Мои секреты</a>
+              </li>
+              <li class='menu_i'>
+                <a class='menu_i_a' href='#records'>Мои рекорды</a>
+              </li>
+              <li class='menu_i'>
+                <a class='menu_i_a' href='#history'>История наград</a>
+              </li>
+            </ul>
+          </nav>
+          <a class='logo' href='/'>Сеть фирменных магазинов NIKE</a>
+          <a class='logout' href='/'>Выход</a>
+        </div>
+      </header>
+      <section aria-label='Banner' class='section __banner' id='banner' role='region'>
+        <div class='banner'>
+          <p class='banner_title'>Личный<br>кабинет</p>
+          <p class='banner_tx'>Участника программы постоянных покупателей<br>и почетных клиентов.</p>
+        </div>
+      </section>
+      <section aria-label='My profile' class='section __profile' id='profile' role='region'>
+        <div class='ctn'>
+          <header class='section_header'>
+            <h1 class='section_title'>
+              &#35;Мой
+              <span>профиль</span>
+            </h1>
+            <p>Укажите основные данные для участия в&nbsp;бонусной программе.</p>
+          </header>
+          <div class='section_body'>
+            <form class='form'>
+              <div class='form_row'>
+                <div class='cols'><div class='cols_i __half'>
+                    <label class='form_label'>Номер карты</label>
+                    <div class='form_input_iconed'>
+                      <i class='icon __card'></i>
+                      <input class='form_input' disabled='disabled' type='text' value='123456789012'>
+                    </div>
+                  </div><div class='cols_i __half'>
+                    <label class='form_label'>Пароль</label>
+                    <div class='form_input_iconed'>
+                      <i class='icon __key'></i>
+                      <a class='form_input' data-dialog='password' href='#'></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='form_row'>
+                <div class='cols'><div class='cols_i __half'>
+                    <label class='form_label'>Имя</label>
+                    <div class='form_input_iconed'>
+                      <i class='icon __user'></i>
+                      <input class='form_input' type='text'>
+                    </div>
+                  </div><div class='cols_i __half'>
+                    <label class='form_label'>Фамилия</label>
+                    <div class='form_input_iconed'>
+                      <i class='icon __user'></i>
+                      <input class='form_input' type='text'>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='form_row'>
+                <div class='cols'><div class='cols_i __half'>
+                    <label class='form_label'>E-mail</label>
+                    <div class='form_input_iconed'>
+                      <i class='icon __mail'></i>
+                      <input class='form_input' type='text'>
+                    </div>
+                  </div><div class='cols_i __half'>
+                    <label class='form_label'>Мобильный телефон</label>
+                    <div class='form_input_iconed'>
+                      <i class='icon __lopata'></i>
+                      <input class='form_input __phone' type='text'>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='form_row'>
+                <div class='cols'><div class='cols_i __half'>
+                    <label class='form_label m-b_2'>Подписка на рассылки по e-mail</label><span style='margin-right: 20px;'><span class='form_radio form_el __fake __iconed __check'>
+                        <input checked='checked' class='form_radio form_el __real js-subscription' data-action='on' name='radio1' type='radio'>
+                      </span></span><span><span class='form_radio form_el __fake __iconed __uncheck'>
+                        <input class='form_radio form_el __real js-subscription' data-action='off' name='radio1' type='radio'>
+                      </span></span>
+                  </div><div class='cols_i __half'>
+                    <label class='form_label m-b_2'>Подписка на sms-рассылки</label><span style='margin-right: 20px;'><span class='form_radio form_el __fake __iconed __check'>
+                        <input checked='checked' class='form_radio form_el __real js-subscription' data-action='on' name='radio2' type='radio'>
+                      </span></span><span><span class='form_radio form_el __fake __iconed __uncheck'>
+                        <input class='form_radio form_el __real js-subscription' data-action='off' name='radio2' type='radio'>
+                      </span></span>
+                  </div>
+                </div>
+              </div>
+              <div class='form_row'>
+                <div class='cols tx __center'>
+                  <div class='cols_i __half tx __left'>
+                    <label class='form_label m-b_2'>Пол</label><span style='margin-right: 20px;'><span class='form_radio form_el __fake __iconed __male'>
+                        <input checked='checked' class='form_radio form_el __real' name='radio3' type='radio'>
+                      </span></span><span><span class='form_radio form_el __fake __iconed __female'>
+                        <input class='form_radio form_el __real' name='radio3' type='radio'>
+                      </span></span>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <footer class='section_footer'>
+            <div class='form'>
+              <a class='form_button js-send-form' href='#'>Сохранить</a>
+            </div>
+          </footer>
+        </div>
+      </section>
+      <section aria-label='My secrets' class='section __secrets' id='secrets' role='region'>
+        <div class='ctn'>
+          <header class='section_header'>
+            <h1 class='section_title'>
+              &#35;Мои
+              <span>секреты</span>
+            </h1>
+            <p>Вы&nbsp;можете ответить на&nbsp;наши дополнительные вопросы<br>и&nbsp;получить за&nbsp;это специальный бонус в&nbsp;размере 500&nbsp;руб.<br>Бонус выплачивается однократно при заполнении всех дополнительных полей.</p>
+          </header>
+          <div class='section_body'>
+            <form class='form'>
+              <div class='form_row'>
+                <div class='cols'><div class='cols_i __half'>
+                    <label class='form_label'>Отчество</label>
+                    <div class='form_input_iconed'>
+                      <i class='icon __user'></i>
+                      <input class='form_input __user' type='text'>
+                    </div>
+                  </div><div class='cols_i __half'>
+                    <label class='form_label'>Дата рождения</label>
+                    <div class='form_input_iconed'>
+                      <i class='icon __calendar'></i>
+                      <input class='form_input __date' type='text'>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='form_row'>
+                <div class='cols'><div class='cols_i __half'>
+                    <label class='form_label'>Любимый магазин</label>
+                    <div class='form_select'>
+                      <p></p>
+                      <ul>
+                        <li data-select='select' data-value='0'>Выберите из списка</li>
+                        <li data-value='1'>Первая категория для выбора</li>
+                        <li data-value='2'>Вторая категория для выбора</li>
+                        <li data-value='3'>Третья категория для выбора</li>
+                      </ul>
+                      <input type='hidden'>
+                    </div>
+                  </div><div class='cols_i __half'>
+                    <label class='form_label'>Любимый магазин</label>
+                    <div class='form_select'>
+                      <p></p>
+                      <ul>
+                        <li data-select='select' data-value='0'>Выберите из списка</li>
+                        <li data-value='1'>Первая категория для выбора</li>
+                        <li data-value='2'>Вторая категория для выбора</li>
+                        <li data-value='3'>Третья категория для выбора</li>
+                      </ul>
+                      <input type='hidden'>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='form_row'>
+                <div class='cols'><div class='cols_i __half'>
+                    <label class='form_label'>Как часто вы занимаетесь спортом</label>
+                    <div class='form_select'>
+                      <p></p>
+                      <ul>
+                        <li data-select='select' data-value='0'>Выберите из списка</li>
+                        <li data-value='1'>Первая категория для выбора</li>
+                        <li data-value='2'>Вторая категория для выбора</li>
+                        <li data-value='3'>Третья категория для выбора</li>
+                      </ul>
+                      <input type='hidden'>
+                    </div>
+                  </div><div class='cols_i __half'>
+                    <label class='form_label'>Вид спорта, которым вы занимаетесь</label>
+                    <div class='form_select'>
+                      <p></p>
+                      <ul>
+                        <li data-select='select' data-value='0'>Выберите из списка</li>
+                        <li data-value='1'>Первая категория для выбора</li>
+                        <li data-value='2'>Вторая категория для выбора</li>
+                        <li data-value='3'>Третья категория для выбора</li>
+                      </ul>
+                      <input type='hidden'>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='form_row'>
+                <div class='cols'><div class='cols_i __half'>
+                    <label class='form_label'>Как часто вы покупаете спортивную&nbsp;одежду и обувь</label>
+                    <div class='form_select'>
+                      <p></p>
+                      <ul>
+                        <li data-select='select' data-value='0'>Выберите из списка</li>
+                        <li data-value='1'>Первая категория для выбора</li>
+                        <li data-value='2'>Вторая категория для выбора</li>
+                        <li data-value='3'>Третья категория для выбора</li>
+                      </ul>
+                      <input type='hidden'>
+                    </div>
+                  </div><div class='cols_i __half'>
+                    <label class='form_label'>Для чего вы приобретаете спортивную&nbsp;одежду и обувь</label>
+                    <div class='form_select'>
+                      <p></p>
+                      <ul>
+                        <li data-select='select' data-value='0'>Выберите из списка</li>
+                        <li data-value='1'>Первая категория для выбора</li>
+                        <li data-value='2'>Вторая категория для выбора</li>
+                        <li data-value='3'>Третья категория для выбора</li>
+                      </ul>
+                      <input type='hidden'>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <footer class='section_footer'>
+            <div class='form'>
+              <a class='form_button js-send-form' href='#'>Сохранить</a>
+            </div>
+          </footer>
+        </div>
+      </section>
+      <section aria-label='My records' class='section __records' id='records' role='region'>
+        <header class='section_header'>
+          <h1 class='section_title'>
+            &#35;Мои
+            <span>рекорды</span>
+          </h1>
+          <p>История ваших операций по&nbsp;карте почётного клиента.</p>
+        </header>
+        <div class='section_body'>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Дата<br>покупки</th>
+                <th>Тип<br>операции</th>
+                <th class='tx __right'>Сумма</th>
+                <th>Акция</th>
+                <th>Магазин</th>
+                <th class='tx __right'>Ожидаемое<br>начисление</th>
+                <th class='tx __right'>Начисленные<br>бонусные<br>рубли</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>22.05.13</td>
+                <td>Покупка</td>
+                <td class='tx __right'>
+                  <sapn class='js-format-money'>223470</sapn>
+                </td>
+                <td>#Станькачком</td>
+                <td>МЕГТПЛСТН</td>
+                <td class='tx __right'>
+                  <sapn class='js-format-money'>2000</sapn>
+                </td>
+                <td class='tx __right'>
+                  <sapn class='js-format-money'>0</sapn>
+                </td>
+              </tr>
+              <tr>
+                <td>22.05.13</td>
+                <td>Возврат</td>
+                <td class='tx __right'>
+                  <sapn class='js-format-money'>223470</sapn>
+                </td>
+                <td>#Станькачком</td>
+                <td>МЕГТПЛСТН</td>
+                <td class='tx __right'>
+                  <sapn class='js-format-money'>-2000</sapn>
+                </td>
+                <td class='tx __right'>
+                  <sapn class='js-format-money'>0</sapn>
+                </td>
+              </tr>
+              <tr>
+                <td>10.07.13</td>
+                <td>Получение<br>подарочной<br>карты</td>
+                <td class='tx __right'>
+                  <sapn class='js-format-money'>-</sapn>
+                </td>
+                <td>-</td>
+                <td>Большой<br>проспект, 84</td>
+                <td class='tx __right'>
+                  <sapn class='js-format-money'>-</sapn>
+                </td>
+                <td class='tx __right'>
+                  <sapn class='js-format-money'>-</sapn>
+                </td>
+              </tr>
+              <tr>
+                <td>10.07.13</td>
+                <td>Привлечение<br>друга<br>в программу</td>
+                <td class='tx __right'>
+                  <sapn class='js-format-money'>-</sapn>
+                </td>
+                <td>&nbsp;</td>
+                <td>-</td>
+                <td class='tx __right'>
+                  <sapn class='js-format-money'>0</sapn>
+                </td>
+                <td class='tx __right'>
+                  <sapn class='js-format-money'>500</sapn>
+                </td>
+              </tr>
+              <tr class='table_hr'>
+                <td colspan='8'>
+                  <div></div>
+                </td>
+              </tr>
+              <tr class='table_balance'>
+                <td colspan='6'>
+                  <sapn class='table_balance_current'>Текущий баланс</sapn>
+                </td>
+                <td>
+                  <sapn class='table_balance_current js-format-money'>500</sapn>
+                </td>
+              </tr>
+              <tr class='table_balance'>
+                <td colspan='6'>Для получения вознаграждения осталось</td>
+                <td>
+                  <sapn class='js-format-money'>24500</sapn>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <footer class='section_footer'>
+          <div class='form'>
+            <a class='form_button' href='#'>Архив операций</a>
+          </div>
+        </footer>
+      </section>
+      <section aria-label='History' class='section __history' id='history' role='region'>
+        <header class='section_header'>
+          <h1 class='section_title'>
+            &#35;История
+            <span>наград</span>
+          </h1>
+          <p>История вознаграждений по&nbsp;программе.</p>
+        </header>
+        <div class='section_body'>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Дата<br>получения</th>
+                <th>Код<br>подтверждения</th>
+                <th>Номер<br>подарочной<br>карты</th>
+                <th>Сумма</th>
+                <th>Магазин</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>22.05.13</td>
+                <td>123456</td>
+                <td>1234567891234</td>
+                <td>
+                  <sapn class='js-format-money'>1500</sapn>
+                </td>
+                <td>МСК/МЕГТПЛСТН</td>
+              </tr>
+              <tr>
+                <td>22.05.13</td>
+                <td>123456</td>
+                <td>1234567891234</td>
+                <td>
+                  <sapn class='js-format-money'>1500</sapn>
+                </td>
+                <td>МСК/МЕГТПЛСТН</td>
+              </tr>
+              <tr>
+                <td>10.07.13</td>
+                <td>123456</td>
+                <td>1234567891234</td>
+                <td>
+                  <sapn class='js-format-money'>1500</sapn>
+                </td>
+                <td>МСК/МЕГТПЛСТН</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <footer class='section_footer'></footer>
+      </section>
+    </main>
+    <footer class='footer' id='footer' role='contentinfo'>
+      <div class='ctn'>
+        <div class='cols'><div class='cols_i __half'>
+            <a href='#'>
+              <img alt='Inventive Retail Group' height='50' src='/assets/images/irg.jpg' width='50'>
+            </a>
+          </div><div class='cols_i __half'>
+            <p>© 2013. Inventive Retail Group</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
