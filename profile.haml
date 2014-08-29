@@ -1,6 +1,17 @@
-= haml 'views/layouts/_header_profile'.to_sym
-= haml 'views/sections/profile/_banner'.to_sym
-= haml 'views/sections/profile/_profile'.to_sym
-= haml 'views/sections/profile/_secrets'.to_sym
-= haml 'views/sections/profile/_records'.to_sym
-= haml 'views/sections/profile/_history'.to_sym
+!!!
+%html.no-js{lang: "ru-RU"}
+  %head
+    %title Сеть фирменных магазинов Nike
+    = Haml::Engine.new(File.read("views/layouts/_head.haml")).render
+
+  %body#page.page
+
+    %main#main.main{role: "main"}
+      = Haml::Engine.new(File.read("views/layouts/_header_profile.haml")).render
+      = Haml::Engine.new(File.read("views/sections/profile/_banner.haml")).render
+      = Haml::Engine.new(File.read("views/sections/profile/_profile.haml")).render
+      = Haml::Engine.new(File.read("views/sections/profile/_secrets.haml")).render
+      = Haml::Engine.new(File.read("views/sections/profile/_records.haml")).render
+      = Haml::Engine.new(File.read("views/sections/profile/_history.haml")).render
+
+    = Haml::Engine.new(File.read("views/layouts/_footer.haml")).render

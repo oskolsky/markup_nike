@@ -1,8 +1,19 @@
-= haml 'views/layouts/_header_index'.to_sym
-= haml 'views/sections/index/_slider'.to_sym
-= haml 'views/sections/index/_slider_more'.to_sym
-= haml 'views/sections/index/_store'.to_sym
-= haml 'views/sections/index/_card'.to_sym
-= haml 'views/sections/index/_rules'.to_sym
-= haml 'views/sections/index/_stores'.to_sym
-= haml 'views/sections/index/_feedback'.to_sym
+!!!
+%html.no-js{lang: "ru-RU"}
+  %head
+    %title Сеть фирменных магазинов Nike
+    = Haml::Engine.new(File.read("views/layouts/_head.haml")).render
+  
+  %body#page.page
+
+    %main#main.main{role: "main"}
+      = Haml::Engine.new(File.read("views/layouts/_header_index.haml")).render
+      = Haml::Engine.new(File.read("views/sections/index/_slider.haml")).render
+      = Haml::Engine.new(File.read("views/sections/index/_slider_more.haml")).render
+      = Haml::Engine.new(File.read("views/sections/index/_store.haml")).render
+      = Haml::Engine.new(File.read("views/sections/index/_card.haml")).render
+      = Haml::Engine.new(File.read("views/sections/index/_rules.haml")).render
+      = Haml::Engine.new(File.read("views/sections/index/_stores.haml")).render
+      = Haml::Engine.new(File.read("views/sections/index/_feedback.haml")).render
+
+    = Haml::Engine.new(File.read("views/layouts/_footer.haml")).render

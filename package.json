@@ -1,0 +1,21 @@
+{
+  "name": "ChemistryTemplate",
+  "version": "1.0.0",
+  "devDependencies": {
+    "gulp": "~3.8.6",
+    "gulp-autoprefixer": "0.0.8",
+    "gulp-clean": "~0.3.1",
+    "gulp-concat": "~2.3.4",
+    "gulp-connect": "~2.0.6",
+    "gulp-csscomb": "^3.0.2",
+    "gulp-cssmin": "~0.1.6",
+    "gulp-html-replace": "~1.1.0",
+    "gulp-ignore": "~1.2.0",
+    "gulp-imagemin": "~0.6.1",
+    "gulp-jshint": "~1.7.1",
+    "gulp-ruby-haml": "0.0.3",
+    "gulp-ruby-sass": "~0.5.0",
+    "gulp-uglify": "~0.3.1",
+    "gulp-watch": "~0.6.8"
+  }
+}

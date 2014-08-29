@@ -57,7 +57,7 @@
             .cols_i.__half
               #fileupload
                 .form_file-wrapper
-                  %a{href: "#", class: "form_file_remove"}
+                  %a.form_file_remove{href: "#"}
                     %img{src: "/assets/images/remove.png", alt: "Удалить"}
                   .form_file.form_el.__fake{data: {placeholder: "Добавить файл"}}
                     %p &nbsp;
@@ -65,4 +65,4 @@
 
     %footer.section_footer
       .form
-        %a{href: "#", class: "form_button", id: "open-feedback"} Написать
+        %a.form_button{href: "#", id: "open-feedback"} Написать

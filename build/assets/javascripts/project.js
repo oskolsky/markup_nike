@@ -134,7 +134,7 @@ $(function() {
     var id = $(this).data('dialog');
     $.arcticmodal({
       type: 'ajax',
-      url: '/views/dialogs/_' + id + '.html',
+      url: '/dialogs/' + id + '.html',
       beforeOpen: function() {
         $('#header').css('margin-right', document.scrollbarWidth + 'px');
       },
