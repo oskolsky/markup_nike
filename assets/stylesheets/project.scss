@@ -873,7 +873,8 @@ h2 {font-size: 50px;}
   color: #fff;
   &[disabled="disabled"] {
     border-color: transparent !important;
-    color: #cd6254;
+    color: #fff;
+    cursor: no-drop;
   }
 }
 
