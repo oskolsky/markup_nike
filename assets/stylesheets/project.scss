@@ -58,7 +58,8 @@ html {
       -ms-text-size-adjust: 100%;
 }
 body {
-  min-width: 1200px;
+  position: relative;
+  min-width: 960px;
   background: #fff;
   color: #000;
   font-weight: 300;
@@ -66,6 +67,7 @@ body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   line-height: 1.2;
   -webkit-backface-visibility: hidden;
+  @include prefixes(box-sizing, border-box);
 }
 
 //
@@ -131,12 +133,27 @@ h2 {font-size: 50px;}
 // .. HEADER
 //
 //****************************************************************************************************
+@media (max-width: 960px) {
+  .header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+  }
+}
+
+@media (min-width: 961px) {
+  .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+  }
+}
+
 .header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 9999;
   padding: 11px 0 9px;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, .5);
   text-align: center;
@@ -1044,7 +1061,7 @@ h2 {font-size: 50px;}
   thead {
     background-color: rgba(255, 255, 255, .07);
     th {
-      padding: 15px 40px 15px 10px;
+      padding: 15px 30px 15px 10px;
       color: #fff;
       vertical-align: middle;
       text-align: left;

@@ -104,14 +104,20 @@ html {
   -ms-text-size-adjust: 100%; }
 
 body {
-  min-width: 1200px;
+  position: relative;
+  min-width: 960px;
   background: #fff;
   color: #000;
   font-weight: 300;
   font-size: 17px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   line-height: 1.2;
-  -webkit-backface-visibility: hidden; }
+  -webkit-backface-visibility: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
 
 h1, h2 {
   text-transform: uppercase;
@@ -155,12 +161,21 @@ h2 {
 .tx.__right {
   text-align: right; }
 
+@media (max-width: 960px) {
+  .header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999; } }
+@media (min-width: 961px) {
+  .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999; } }
 .header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 9999;
   padding: 11px 0 9px;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5);
   text-align: center; }
@@ -913,7 +928,7 @@ h2 {
   .table thead {
     background-color: rgba(255, 255, 255, 0.07); }
     .table thead th {
-      padding: 15px 40px 15px 10px;
+      padding: 15px 30px 15px 10px;
       color: #fff;
       vertical-align: middle;
       text-align: left;
